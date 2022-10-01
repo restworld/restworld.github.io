@@ -1,210 +1,368 @@
-<!DOCTYPE html>
-<html  >
-<head>
-  <!-- Site made with Mobirise Website Builder v5.6.11, https://mobirise.com -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v5.6.11, mobirise.com">
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:image:src" content="">
-  <meta property="og:image" content="">
-  <meta name="twitter:title" content="Home">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
-  <meta name="description" content="">
-  
-  
-  <title>Home</title>
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="assets/parallax/jarallax.css">
-  <link rel="stylesheet" href="assets/dropdown/css/style.css">
-  <link rel="stylesheet" href="assets/socicon/css/styles.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-  
-  
-  
-  
+<!DOCTYPE html><html><head>
+<meta charset="utf-8">
+<meta name="Robots" content="index, follow">
+<meta name="description" content="Bartek Wojtyca. Projektant i Front-end developer. Geek uwielbiający kino, gadżety, gry i rakiety.">
+<title>Bartek Wojtyca. Projektant i Front-end developer. </title>
+<link rel="stylesheet" href="css/animations.css" type="text/css">
+<link rel="stylesheet" href="css/css_dark.css" type="text/css">
+<link rel="shortcut icon" href="favico.ico" type="image/x-icon">
 </head>
 <body>
-  
-  <section data-bs-version="5.1" class="menu cid-s48OLK6784" once="menu" id="menu1-h">
-    
-    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
-        <div class="container">
-            <div class="navbar-brand">
-                <span class="navbar-logo">
-                    <a href="https://mobiri.se">
-                        <img src="assets/images/logo.png" alt="Mobirise Website Builder" style="height: 3.8rem;">
-                    </a>
-                </span>
-                <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-7" href="https://mobiri.se">Brand Name</a></span>
-            </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black display-4" href="https://mobirise.com">Menu Item 1</a></li>
-                    <li class="nav-item"><a class="nav-link link text-black display-4" href="https://mobirise.com">
-                            Menu Item 2</a></li></ul>
-                
-                
-            </div>
-        </div>
-    </nav>
-
+<header class="works">
+	<div class="center">
+		<h2 id="logo"><a href="#hello" name="welcome"><img src="images/c-logo.png" alt="Bartek Wojtyca"></a></h2>
+		<div class="normal">
+			<ul>
+				<li><a href="#works" name="portfolio">Portfolio</a></li>
+				<li><a href="#about/me" name="o">O mnie</a></li>
+				<li><a href="#contact" name="kontakt">Kontakt</a></li>
+			</ul>
+			<div class="navInfo">
+				<span class="mice"></span>
+				<div class="arrows">
+					<span class="arrow a_up"></span>
+					<span class="arrow a_left"></span>
+					<span class="arrow a_down"></span>
+					<span class="arrow a_right"></span>
+				</div>
+			</div>
+		</div>
+		<div class="works">
+			<ul>
+				<li class="prevProject" onclick="zmianaDetali('prev')"><img src="images/arrow_left.png" alt>poprzedni projekt</li>
+				<li class="prev" onclick="zmianaBoxa('prev')"><img src="images/arrow_left.png" alt></li>
+				<li class="next" onclick="zmianaBoxa('next')"><img src="images/arrow_right.png" alt></li>
+				<li class="nextProject" onclick="zmianaDetali('next')">następny projekt<img src="images/arrow_right.png" alt></li>
+				<li class="close" onclick="closeWork()"><img src="images/close.png" alt></li>
+			</ul>
+		</div>
+	</div>
+</header>
+<section id="welcome" name="hello">
+	<div class="part">
+		<div class="inside">
+			<h2><img src="images/c-logo.png" alt="Bartek Wojtyca" class="normal"></h2>
+			<h1><span>Bartek Wojtyca.</span> <span>Projektant i Front-end developer.</span></h1>
+			<div class="d">
+				<span class="text t1">Przewiń</span>				
+				<span class="text t2">w dół...</span>
+				<div class="startExplore"></div>
+				<span class="round r1"></span>
+				<span class="round r2"></span>
+			</div>
+		</div>
+	</div>	
+		<div class="clear"></div>
+</section>
+<section id="details" name="work"><div class="levele"></div></section>
+<section id="portfolio" name="works">
+	<div class="part">
+		<div class="inside">
+			<h2 class="headline"><span class="icon">p</span>Kilka moich ulubionych projektów<small>Nie krępuj się, wybierz któryś</small></h2>
+						<ul>
+				<li class="active"><a href="work/duku.html"><img src="images/cover_1.jpg" alt><span class="desc"><strong>Duku music - zaciekła muzyka</strong><small>Identyfikacja, Projekt WWW</small></span></a></li>
+				<li><a href="work/kceto.html"><img src="images/cover.jpg" alt><span class="desc"><strong>KceTo!</strong><small>Identyfikacja, Projekt WWW</small></span></a><a href="http://kceto.pl/" title="Przejdź na stronę KceTo!" target="_blank" style="position: absolute;width: 14px;height: 16px;bottom: 43px;z-index: 0;right: 255px;"><img src="images/out.png" alt="KceTo! Najlepsze produkty w Internecie!" style="top: 0;display: block;width: 14px;height: 14px;"></a></li>
+								<li><a href="work/hotmind.html"><img src="images/cover_3.jpg" alt="Hotmind"><span class="desc"><strong>Hotmind</strong><small>Współpraca stała</small></span></a></li>
+				<li><a href="work/smart_systems.html"><img src="images/cover_2.jpg" alt="Smart Systems"><span class="desc"><strong>Smart Systems</strong><small>Identyfikacja, Projekt WWW</small></span></a></li>
+				<li><a href="work/aurum.html"><img src="images/cover_6.jpg" alt><span class="desc"><strong>Aurum - Club & Restaurant</strong><small>Identyfikacja, Projekt WWW</small></span></a></li>
+				<li><a href="work/kocierz.html"><img src="images/cover_5.jpg" alt><span class="desc"><strong>Kocierz - Hotel & SPA</strong><small>Projekt WWW, Druk</small></span></a></li>
+				<li><a href="work/studio_polysku.html"><img src="images/cover_4.jpg" alt><span class="desc"><strong>Studio Połysku Miracle</strong><small>Identyfikacja, Projekt WWW</small></span></a></li>
+				<li><a href="work/molki.html"><img src="images/cover_8.jpg" alt="Molki"><span class="desc"><strong>Molki</strong><small>Projekt WWW</small></span></a></li>
+				<li><a href="work/paulina.html"><img src="images/cover_7.jpg" alt="Paulina Żądło"><span class="desc"><strong>Paulina Żądło</strong><small>Projekt WWW</small></span></a></li>
+				<li><a href="work/cynamon.html"><img src="images/cover_9.jpg" alt><span class="desc"><strong>Cynamon Wadowice</strong><small>Identyfikacja, Projekt WWW</small></span></a></li>
+				<li><a href="work/sanktuarium.html"><img src="images/cover_10.jpg" alt="Sanktuarium Myślenice"><span class="desc"><strong>Sanktuarium Myślenice</strong><small>Projekt WWW, Druk</small></span></a></li>
+							</ul>
+			<div class="clear"></div>
+			<div class="nav">
+				<div class="arrow prev"></div>
+				<div class="arrow next"></div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+</section>
+<section id="o" name="about">
+	<div class="suwak">
+		<div class="part active" id="info" name="me">
+			<div class="inside" itemscope itemtype="http://data-vocabulary.org/Person">				
+				<h2 class="headline"><span class="icon">.</span>O mnie<small>Łaaaha! cała strona moja!</small></h2>				
+				<div class="photo right">
+					<img src="images/photo.png" alt="me" itemprop="photo">
+					<div class="tri">																	
+						<span class="t5 l15 tlu o2"></span><span class="t5 l16 tld o1"></span><span class="t5 l17 tlu o7"></span><span class="t5 l18 tld o4"></span><span class="t5 l19 tlu o05"></span><span class="t6 l14 tlu o7"></span><span class="t6 l20 tlu o9"></span><span class="t7 l14 tdd o1"></span><span class="t7 l15 tlu o2"></span><span class="t7 l19 tlu o5"></span><span class="t7 l20 tld o3"></span><span class="t7 l21 tdu o1"></span><span class="t8 l14 tlu o1"></span><span class="t8 l15 tld o3"></span><span class="t8 l16 tlu o7"></span><span class="t8 l18 tlu o3"></span><span class="t8 l19 tld o1"></span><span class="t4 l16 tlu o1"></span><span class="t4 l23 tld o1"></span><span class="t5 l12 tld o05"></span><span class="t5 l13 tlu o2"></span><span class="t5 l20 tld o1"></span><span class="t5 l21 tlu o05"></span><span class="t6 l11 tld o05"></span><span class="t6 l12 tlu o1"></span><span class="t6 l13 tld o3"></span><span class="t6 l22 tlu o1"></span><span class="t7 l11 tlu o1"></span><span class="t7 l12 tld o2"></span><span class="t7 l13 tlu o05"></span><span class="t8 l13 tdd o05"></span><span class="t8 l22 tlu o2"></span><span class="t3 l12 tld o1"></span><span class="t4 l10 tlu o3"></span><span class="t5 l9 tlu o2"></span><span class="t5 l10 tld o1"></span><span class="t5 l11 tdu o1"></span><span class="t6 l6 tdu o05"></span><span class="t6 l9 tld o1"></span><span class="t7 l8 tdd o3"></span><span class="t7 l22 tld o05"></span><span class="t7 l24 tld o2"></span><span class="t8 l7 tld o1"></span><span class="t9 l8 tld o2"></span><span class="t9 l9 tdu o05"></span><span class="t10 l9 tld o1"></span><span class="t3 l5 tlu o1"></span><span class="t5 l2 tld o05"></span><span class="t5 l3 tdu o1"></span><span class="t5 l4 tld o1"></span><span class="t5 l5 tlu o2"></span><span class="t6 l0 tdu o1"></span><span class="t6 l1 tld o05"></span><span class="t6 l2 tlu o2"></span><span class="t6 l4 tdu o1"></span><span class="t7 l1 tlu o2"></span><span class="t7 l2 tdd o05"></span><span class="t7 l3 tdu o2"></span><span class="t7 l5 tlu o1"></span><span class="t8 l1 tld o1"></span><span class="t8 l2 tlu o2"></span><span class="t8 l6 tdu o1"></span><span class="t9 l4 tld o1"></span><span class="t9 l5 tlu o2"></span><span class="t9 l6 tld o05"></span><span class="t10 l5 tld o05"></span><span class="t10 l8 tlu o05"></span>
+					</div>
+				</div>
+				<div class="desc">
+					<p><strong>Jestem <span itemprop="name">Bartek Wojtyca</span>, <span itemprop="org">freelancer</span>, <span itemprop="role">projektant i front-end developer</span> oraz student reklamy i marketingu na Polish Open University w <span itemprop="location">Krakow</span>ie.</strong></p>
+					<p>Od ponad 6ciu lat bawię się z grafiką. Gdy zabawa stała się nieco poważniejsza otrzymałem możliwość nauki kodowania, dzięki czemu teraz staram się "ożywiać" swoje idee by były jeszcze ciekawsze.</p>
+					<p>Jestem geekiem kochającym kino, gadżety, gry i rakiety. Uwielbiam herbatę, która najbardziej mi smakuje w szklance z dwoma łyżeczkami cukru.</p>
+					<p>Aktualnie pracuję w agencji <a href="http://www.sointeractive.pl/" target="_blank">SoInteractive</a>, ale zachęcam po pobrania mojego <a href="cv.pdf" target="_blank">CV</a>.</p>
+				</div>
+				<div class="clear"></div>
+				<div class="more">
+					<div class="tu">Więcej o mnie:</div>
+					<span class="triangle u z1" rel="umiejetnosci">
+						<span class="shape">
+							<span><a href="#"></a></span>						
+						</span>
+						<span class="text"><small class="icon">F</small><strong>Umiejętności</strong></span>
+					</span>
+					<span class="triangle d z1" rel="doswiadczenie">
+						<span class="shape">
+							<span><a href="#"></a></span>						
+						</span>
+						<span class="text"><strong>Doświadczenie</strong><small class="icon">R</small></span>
+					</span>
+					<span class="triangle u z1" rel="wyksztalcenie">
+						<span class="shape">
+							<span><a href="#"></a></span>						
+						</span>
+						<span class="text"><small class="icon">ó</small><strong>Wykształcenie</strong></span>
+					</span>
+				</div>
+			</div>
+			<div class="tArrow"><span class="rArrow" rel="umiejetnosci"><small class="icon">F</small></span></div>
+		</div>
+		<div class="part" id="umiejetnosci" name="skills">
+			<div class="inside">
+				<h2 class="headline"><span class="icon">F</span>Wykres moich umiejętności<small>To czego udało mi się nauczyć</small></h2>
+				<div id="wykres">
+			        <div class="slupki">
+				        <ul>
+				            <li class="ps hidden"><span class="wartosc">97%</span><span class="text">Ps</span></li>
+				            <li class="ai hidden"><span class="wartosc">82%</span><span class="text">Il</span></li>
+				            <li class="fl hidden"><span class="wartosc">41%</span><span class="text">Fl</span></li>
+				            <li class="id hidden"><span class="wartosc">30%</span><span class="text">Id</span></li>
+				            <li class="af hidden"><span class="wartosc">18%</span><span class="text">Ae</span></li>
+				            <li class="cd hidden"><span class="wartosc">37%</span><span class="text">Corel</span></li>                            
+				            <li class="html hidden"><span class="wartosc">92%</span><span class="text">HTML</span></li>                          
+				            <li class="css hidden"><span class="wartosc">95%</span><span class="text">CSS</span></li>
+				            <li class="jq hidden"><span class="wartosc">79%</span><span class="text">jQuery</span></li>
+				            <li class="php hidden"><span class="wartosc">41%</span><span class="text">PHP</span></li>
+				            <li class="seo hidden"><span class="wartosc">68%</span><span class="text">SEO</span></li>
+				            <li class="wp hidden"><span class="wartosc">36%</span><span class="text">WP</span></li>
+				        </ul>
+			        </div>
+			        <div class="linie">
+			        	<ul>
+			        		<li class="l100"><span class="wartosc">100%</span><span class="linia"></span></li>
+			        		<li class="l75"><span class="wartosc">75%</span><span class="linia"></span></li>
+			        		<li class="l50"><span class="wartosc">50%</span><span class="linia"></span></li>
+			        		<li class="l25"><span class="wartosc">25%</span><span class="linia"></span></li>
+			        		<li class="l0"><span class="wartosc">0%</span><span class="linia"></span></li>
+			        	</ul>
+			        </div>
+			    </div>
+			    <div class="info">
+			    	<p>Dodatkowo znajomość pakietu <strong>MS Office</strong>, systemu operacyjnego <strong>MS Windows XP/7</strong>, programów <strong>Aptana Studio</strong>, <strong>Titanium</strong>, system <strong>Subversion</strong>.</p>
+					<p>Bardzo dobrze orientuje się w świecie <strong>nowinek technoligicznych</strong>, <strong>trendów designerskich</strong> oraz <strong>ciekawostek koderskich</strong>.</p>
+			    </div>
+				<div class="clear"></div>
+			</div>
+			<div class="tArrow"><span class="lArrow" rel="info"><small class="icon">.</small></span><span class="rArrow" rel="doswiadczenie"><small class="icon">R</small></span></div>
+		</div>
+		<div class="part" id="doswiadczenie" name="experience">
+			<div class="inside">
+				<h2 class="headline"><span class="icon">R</span>Oś czasu pracy<small>Tak dla animacji... Fajna, co nie?</small></h2>
+				<div class="info">
+					<p>Poniższa oś czasu wskazuje najważniejsze dla mnie etapy pracy i projekty, które w znacznym stopniu wpłynęły na moje umiejętności.</p>
+				</div>
+			    <div id="timeline">
+					<div class="belt freelancer">
+						<div class="line">
+							<strong>Freelancer</strong>
+							<span></span>
+						</div>
+						<ul>
+							<li class="f1 w1"><span class="nazwa"><small><span class="long">Poradnik </span>WorldMu<span class="long"><br>(pierwsza strona WWW)</span></small></span></li>
+							<li class="f2 w1"><span class="nazwa"><small><span class="long">The Lord of The Rings: TCG<br>Liga Polska</span><span class="short">LotR: TCG</span></small></span></li>
+							<li class="f3 w2 toHide"><span class="nazwa"><small><span class="long">Fotografia to pasja...</span><span class="short">FotoPasja</span></small></span></li>
+							<li class="f4 w1 link"><a href="work/duku.html"><span class="nazwa"><small>Duku<span class="long"> - zaciekła muzyka<br>(projekt własny)</span></small></span></a></li>
+							<li class="f5 w2"><span class="nazwa"><small><span class="long">Diamentowa </span>Ochrona Lakieru</small></span></li>
+							<li class="f6 w3 link"><a href="work/aurum.html"><span class="nazwa"><small>Aurum<span class="long"> - Club & Restaurant</span></small></span></a></li>
+							<li class="f7 w1 link"><a href="work/studio_polysku.html"><span class="nazwa"><small><span class="long">Studio Połysku </span>Miracle</small></span></a></li>
+							<li class="f8 w2 link toHide"><a href="work/sanktuarium.html"><span class="nazwa"><small>Sanktuarium<span class="long"> Myślenice</span></small></span></a></li>
+							<li class="f9 w1"><span class="nazwa"><small>KomisDirect.pl</small></span></li>
+							<li class="f10 w2"><span class="nazwa"><small>Polska Giełda</small></span></li>
+							<li class="f11 w1 link"><a href="work/kceto.html"><span class="nazwa"><small>KceTo!</small></span></a></li>
+						</ul>    
+					</div>
+					<div class="belt hotmind">
+						<div class="line">
+							<strong>Hotmind</strong>
+							<span></span>
+						</div>			
+						<ul>
+							<li class="h1 w1 toHide"><span class="nazwa"><small>Alior<span class="long"> Bank</span></small></span></li>
+							<li class="h2 w2 toW1"><span class="nazwa"><small><span class="long">Gourment <br>Restaurants</span><span class="short">GR</span></small></span></li>
+							<li class="h3 w1 toHide"><span class="nazwa"><small>Sport <br>Media</small></span></li>
+							<li class="h4 w1 link"><a href="work/kocierz.html"><span class="nazwa"><small>Kocierz</small></span></a></li>
+							<li class="h5 w2"><span class="nazwa"><small>CarOutlet</small></span></li>
+							<li class="h6 w1 link toW2"><a href="work/alior.html"><span class="nazwa"><small>Alior<span class="long"> Bank <br>Private Banking</span></small></span></a></li>
+							<li class="h7 w2 toHide"><span class="nazwa"><small>Tateossian<span class="long"> London</span></small></span></li>
+							<li class="h8 w3"><span class="nazwa"><small><span class="long">Good Food Concept</span><span class="short">GFC</span></small></span></li>
+							<li class="h9 w1 link"><a href="work/molki.html"><span class="nazwa"><small>Molki</small></span></a></li>
+						</ul>
+					</div>
+					<ul class="time">
+						<li><span class="rok">2006</span><span class="sep"></span></li>
+						<li><span class="rok">2007</span><span class="sep"></span></li>
+						<li><span class="rok">2008</span><span class="sep"></span></li>
+						<li><span class="rok">2009</span><span class="sep"></span></li>
+						<li><span class="rok">2010</span><span class="sep"></span></li>
+						<li><span class="rok">2011</span><span class="sep"></span></li>
+						<li><span class="rok">2012</span><span class="sep"></span></li>
+						<li><span class="rok">2013</span><span class="sep"></span></li>
+					</ul>
+			    </div> 
+			    <div class="clear"></div>
+			</div>
+			<div class="tArrow"><span class="lArrow" rel="umiejetnosci"><small class="icon">F</small></span><span class="rArrow" rel="wyksztalcenie"><small class="icon">ó</small></span></div>
+		</div>
+		<div class="part" id="wyksztalcenie" name="education">
+			<div class="inside">
+				<div class="box wyksztalcenie">
+					<h2 class="headline"><span class="icon">ó</span>Wykształcenie<small>Gdzie ogólną wiedzę zdobywam</small></h2>
+					<div class="desc">
+						<p>
+							<span class="info">wrzesień 2009 - teraz:</span><br>
+							<span class="typ">uczelnia: </span><strong>Polish Open University</strong><br>
+							<span class="typ">kierunek: </span><strong>Reklama i marketing</strong>
+						</p>
+						<p>
+							<span class="info">wrzesień 2006 - czerwiec 2009:</span><br>
+							<span class="typ">szkoła: </span><strong>I LO w Myślenicach</strong><br>
+							<span class="typ">profil: </span><strong>matematyczno-fizyczny</strong>
+						</p>
+					</div>
+				</div>
+				<div class="box geeks">
+					<h2 class="headline"><span class="icon">6</span>Geeks<small>Co mąci mi w głowie</small></h2>	
+					<div class="desc">
+						<img src="images/interest_android.png" class="active">
+						<img src="images/interest_ps3.png">
+						<img src="images/interest_games.png">
+						<img src="images/interest_bike.png">
+						<img src="images/interest_design.png">
+						<img src="images/interest_movies.png">
+						<img src="images/interest_skate.png">
+					</div>
+				</div>
+				<div class="box jezyki">
+					<h2 class="headline"><span class="icon">9</span>Języki<small>Jak potrafię się pozozumieć z innymi</small></h2>
+					<div class="desc">
+						<p>
+							<span class="typ">Polski</span>
+						</p>
+						<ul>
+							<li><span></span></li><li><span></span></li><li><span></span></li><li><span></span></li><li><span></span></li><li><span></span></li><li><span></span></li><li><span></span></li><li><span></span></li><li></li>
+						</ul>
+						<div class="clear"></div>
+						<p>
+							<span class="typ">Angielski</span>
+						</p>
+						<ul>
+							<li><span></span></li><li><span></span></li><li><span></span></li><li><span></span></li><li><span></span></li><li></li><li></li><li></li><li></li><li></li>
+						</ul>
+						<div class="clear"></div>
+						<p>
+							<span class="typ">Niemiecki</span>
+						</p>
+						<ul>
+							<li><span></span></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="tArrow"><span class="lArrow" rel="doswiadczenie"><small class="icon">R</small></span></div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</section>
+<section id="kontakt" name="contact">
+	<div class="part">
+		<div class="inside">
+			<h2 class="headline"><span class="icon">!</span>Pozostańmy w kontakcie<small>Gdzie mnie znajdziesz...</small></h2>
+			<div class="box kontakt">
+				<div class="desc">
+					<p>
+						<span class="info">Adres e-mail:</span><br>
+						<span class="typ icon">%</span><script type="text/javascript" async src="js/ga.js"></script><script type="text/javascript">document.write('<n uers="znvygb:onegrx@jbwglpn.cy">onegrx@jbwglpn.cy</n>'.replace(/[a-z]/gi, function(s) {return String.fromCharCode(s.charCodeAt(0) + (s.toLowerCase() < 'n' ? 13 : -13))}));</script><a href="mailto:bartek@wojtyca.pl">bartek@wojtyca.pl</a>
+					</p>
+					<p>
+						<span class="info">Telefon:</span><br>
+						<span class="typ icon">"</span>+48 510 985 510
+					</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="desc">
+					<p>
+						<span class="info">Creative media:</span><br>
+						<span class="typ iconImg be"></span><a href="http://be.net/BartekWojtyca">Behance</a><br>
+						<span class="typ iconImg db"></span><a href="http://dribbble.com/BartekW">Dribbble</a><br>
+						<span class="typ iconImg da"></span><a href="http://daedhor.deviantart.com/">DeviantART</a>
+					</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="desc">
+					<p>
+						<span class="info">Social media:</span><br>
+						<span class="typ iconImg gp"></span><a href="https://plus.google.com/b/111672371827010632402/111672371827010632402/posts">Google+</a><br>
+						<span class="typ iconImg fb"></span><a href="http://www.facebook.com/pages/Bartek-Wojtyca/161296993977018?ref=hl">Facebook</a><br>
+						<span class="typ iconImg tw"></span><a href="https://twitter.com/bartekwojtyca">Twitter</a>
+					</p>
+				</div>	
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>	
+	<div class="award opl">
+		<a href="http://onepagelove.com/bartek-wojtyca" rel="nofollow">
+			<img src="images/one-page-love-award.png" alt="Bartek Wojtyca featured on One Page Love.">
+		</a>
+	</div>
+	<div class="clear"></div>
 </section>
 
-<section data-bs-version="5.1" class="header1 cid-s48MCQYojq mbr-fullscreen mbr-parallax-background" id="header1-f">
 
-    
+<div class="QOverlay">
+	<div id="loader">
+	    <div class="circle">
+	        <div class="display"></div>
+	        <div class="circleOverflow">
+	            <div class="rotate right">
+	                <div class="bg right"><span></span></div>
+	            </div>
+	        </div>
+	        <div class="circleOverflow">
+	            <div class="rotate left">
+	                <div class="bg left"><span></span></div>
+	            </div>
+	        </div>
+	    </div>
+	    <div class="d"></div>
+	    <div class="c"></div>
+	</div>
+</div>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5383611-2']);
+  _gaq.push(['_setDomainName', 'bartek.wojtyca.pl']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/queryLoader.js"></script>
+<script type="text/javascript">QueryLoader.init();</script>
 
-    <div class="mbr-overlay" style="opacity: 0.8; background-color: rgb(255, 255, 255);"></div>
-
-    <div class="align-center container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-8">
-                <h1 class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong>Full Screen Intro</strong></h1>
-                
-                <p class="mbr-text mbr-fonts-style display-7">This is a default project. Click any text to edit or style it. Select text to insert a <a href="http://mobirise.com">link</a>. Click the blue "Gear" icon at the top right corner to hide/show buttons, text, title, and change the block background. Click the red "+" button at the bottom right corner to add a new block. Use the top left menu to create new pages, sites, and add new themes and extensions.</p>
-                <div class="mbr-section-btn mt-3"><a class="btn btn-success display-4" href="https://mobirise.com">Button 1</a> <a class="btn btn-success-outline display-4" href="https://mobirise.com">Button 2 &gt;</a></div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="content1 cid-s48udlf8KU" id="content1-8">
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="title col-12 col-md-9">
-                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2"><strong>Work with Content</strong></h3>
-                <h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-7">Click on the image to replace it. To change parameters of a block, click on <em>the blue gear icon</em>. You can set a background type and its content. Click on the Buttons parameter to enable buttons for this block. Click in the text to change your text style or color. Select text to change its formatting or add links.</h4>
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="image3 cid-s48upRUlSD" id="image3-9">
-    
-
-    
-
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-9">
-                <div class="image-wrapper">
-                    <img src="assets/images/6.jpg" alt="Mobirise Website Builder">
-                    <p class="mbr-description mbr-fonts-style mt-2 align-center display-4">
-                        Image Description</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="content1 cid-s48vaXqeL6" id="content1-b">
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="title col-12 col-md-9">
-                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2"><strong>Add new blocks</strong></h3>
-                <h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-7">Mobirise offers several themes to work with. Each theme includes a set of various blocks: headers, content blocks, galleries and sliders, footers, etc. To add needed blocks to your page, click on <em>the red plus button </em>at the bottom right corner. You can select a needed block type. To add a block, click on it in the list or drag it to your page.</h4>
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="content1 cid-s48vnjULo4" id="content1-c">
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="title col-12 col-md-9">
-                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2"><strong>Create new pages</strong></h3>
-                <h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-7">You can have multiple pages in your project. Find the menu icon at the top left corner. Move your cursor over it to open the main menu. Click on the <strong>Pages </strong>tab to manage your pages. Don't forget to set your page title and description. This info is used by browsers and search engines. The home page of your project cannot be removed.</h4>
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="content1 cid-s48vrXhP0J" id="content1-d">
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="title col-12 col-md-9">
-                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2"><strong>Publish your project
-</strong></h3>
-                <h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-7">Click on the <strong>Publish </strong>button at the top right corner and select a needed publishing option. Use the Mobirise publish option to publish your test site on our servers. You can publish your site locally if you don't want to publish it online yet.</h4>
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="footer3 cid-s48P1Icc8J" once="footers" id="footer3-i">
-
-    
-
-    
-
-    <div class="container">
-        <div class="media-container-row align-center mbr-white">
-            <div class="row row-links">
-                <ul class="foot-menu">
-                    
-                    
-                    
-                    
-                    
-                <li class="foot-menu-item mbr-fonts-style display-7"><a href="https://mobirise.com/help/" class="text-success">Help Center</a></li><li class="foot-menu-item mbr-fonts-style display-7"><a href="http://forums.mobirise.com/" class="text-success">Mobirise Forums</a></li><li class="foot-menu-item mbr-fonts-style display-7"><a href="https://mobirise.com/" class="text-success">Mobirise.com</a></li></ul>
-            </div>
-            <div class="row social-row">
-                <div class="social-list align-right pb-2">
-                    
-                    
-                    
-                    
-                    
-                    
-                <div class="soc-item">
-                        <a href="https://twitter.com/mobirise" target="_blank">
-                            <span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social"></span>
-                        </a>
-                    </div><div class="soc-item">
-                        <a href="https://www.facebook.com/pages/Mobirise/1616226671953247" target="_blank">
-                            <span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social"></span>
-                        </a>
-                    </div><div class="soc-item">
-                        <a href="https://www.youtube.com/c/mobirise" target="_blank">
-                            <span class="socicon-youtube socicon mbr-iconfont mbr-iconfont-social"></span>
-                        </a>
-                    </div><div class="soc-item">
-                        <a href="https://instagram.com/mobirise" target="_blank">
-                            <span class="mbr-iconfont mbr-iconfont-social socicon-instagram socicon"></span>
-                        </a>
-                    </div></div>
-            </div>
-            <div class="row row-copirayt">
-                <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7">
-                    © Copyright 2020 Mobirise. All Rights Reserved.
-                </p>
-            </div>
-        </div>
-    </div>
-</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/2880651" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">Created with Mobirise &#8204;</p><a style="z-index:1" href="https://mobirise.com/website-maker.html">Free Web Site Maker</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/parallax/jarallax.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
-  
-  
-</body>
-</html>
+</body></html>
