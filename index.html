@@ -1,368 +1,45 @@
-<!DOCTYPE html><html><head>
-<meta charset="utf-8">
-<meta name="Robots" content="index, follow">
-<meta name="description" content="Bartek Wojtyca. Projektant i Front-end developer. Geek uwielbiający kino, gadżety, gry i rakiety.">
-<title>Bartek Wojtyca. Projektant i Front-end developer. </title>
-<link rel="stylesheet" href="css/animations.css" type="text/css">
-<link rel="stylesheet" href="css/css_dark.css" type="text/css">
-<link rel="shortcut icon" href="favico.ico" type="image/x-icon">
-</head>
-<body>
-<header class="works">
-	<div class="center">
-		<h2 id="logo"><a href="#hello" name="welcome"><img src="images/c-logo.png" alt="Bartek Wojtyca"></a></h2>
-		<div class="normal">
-			<ul>
-				<li><a href="#works" name="portfolio">Portfolio</a></li>
-				<li><a href="#about/me" name="o">O mnie</a></li>
-				<li><a href="#contact" name="kontakt">Kontakt</a></li>
-			</ul>
-			<div class="navInfo">
-				<span class="mice"></span>
-				<div class="arrows">
-					<span class="arrow a_up"></span>
-					<span class="arrow a_left"></span>
-					<span class="arrow a_down"></span>
-					<span class="arrow a_right"></span>
-				</div>
-			</div>
-		</div>
-		<div class="works">
-			<ul>
-				<li class="prevProject" onclick="zmianaDetali('prev')"><img src="images/arrow_left.png" alt>poprzedni projekt</li>
-				<li class="prev" onclick="zmianaBoxa('prev')"><img src="images/arrow_left.png" alt></li>
-				<li class="next" onclick="zmianaBoxa('next')"><img src="images/arrow_right.png" alt></li>
-				<li class="nextProject" onclick="zmianaDetali('next')">następny projekt<img src="images/arrow_right.png" alt></li>
-				<li class="close" onclick="closeWork()"><img src="images/close.png" alt></li>
-			</ul>
-		</div>
-	</div>
-</header>
-<section id="welcome" name="hello">
-	<div class="part">
-		<div class="inside">
-			<h2><img src="images/c-logo.png" alt="Bartek Wojtyca" class="normal"></h2>
-			<h1><span>Bartek Wojtyca.</span> <span>Projektant i Front-end developer.</span></h1>
-			<div class="d">
-				<span class="text t1">Przewiń</span>				
-				<span class="text t2">w dół...</span>
-				<div class="startExplore"></div>
-				<span class="round r1"></span>
-				<span class="round r2"></span>
-			</div>
-		</div>
-	</div>	
-		<div class="clear"></div>
-</section>
-<section id="details" name="work"><div class="levele"></div></section>
-<section id="portfolio" name="works">
-	<div class="part">
-		<div class="inside">
-			<h2 class="headline"><span class="icon">p</span>Kilka moich ulubionych projektów<small>Nie krępuj się, wybierz któryś</small></h2>
-						<ul>
-				<li class="active"><a href="work/duku.html"><img src="images/cover_1.jpg" alt><span class="desc"><strong>Duku music - zaciekła muzyka</strong><small>Identyfikacja, Projekt WWW</small></span></a></li>
-				<li><a href="work/kceto.html"><img src="images/cover.jpg" alt><span class="desc"><strong>KceTo!</strong><small>Identyfikacja, Projekt WWW</small></span></a><a href="http://kceto.pl/" title="Przejdź na stronę KceTo!" target="_blank" style="position: absolute;width: 14px;height: 16px;bottom: 43px;z-index: 0;right: 255px;"><img src="images/out.png" alt="KceTo! Najlepsze produkty w Internecie!" style="top: 0;display: block;width: 14px;height: 14px;"></a></li>
-								<li><a href="work/hotmind.html"><img src="images/cover_3.jpg" alt="Hotmind"><span class="desc"><strong>Hotmind</strong><small>Współpraca stała</small></span></a></li>
-				<li><a href="work/smart_systems.html"><img src="images/cover_2.jpg" alt="Smart Systems"><span class="desc"><strong>Smart Systems</strong><small>Identyfikacja, Projekt WWW</small></span></a></li>
-				<li><a href="work/aurum.html"><img src="images/cover_6.jpg" alt><span class="desc"><strong>Aurum - Club & Restaurant</strong><small>Identyfikacja, Projekt WWW</small></span></a></li>
-				<li><a href="work/kocierz.html"><img src="images/cover_5.jpg" alt><span class="desc"><strong>Kocierz - Hotel & SPA</strong><small>Projekt WWW, Druk</small></span></a></li>
-				<li><a href="work/studio_polysku.html"><img src="images/cover_4.jpg" alt><span class="desc"><strong>Studio Połysku Miracle</strong><small>Identyfikacja, Projekt WWW</small></span></a></li>
-				<li><a href="work/molki.html"><img src="images/cover_8.jpg" alt="Molki"><span class="desc"><strong>Molki</strong><small>Projekt WWW</small></span></a></li>
-				<li><a href="work/paulina.html"><img src="images/cover_7.jpg" alt="Paulina Żądło"><span class="desc"><strong>Paulina Żądło</strong><small>Projekt WWW</small></span></a></li>
-				<li><a href="work/cynamon.html"><img src="images/cover_9.jpg" alt><span class="desc"><strong>Cynamon Wadowice</strong><small>Identyfikacja, Projekt WWW</small></span></a></li>
-				<li><a href="work/sanktuarium.html"><img src="images/cover_10.jpg" alt="Sanktuarium Myślenice"><span class="desc"><strong>Sanktuarium Myślenice</strong><small>Projekt WWW, Druk</small></span></a></li>
-							</ul>
-			<div class="clear"></div>
-			<div class="nav">
-				<div class="arrow prev"></div>
-				<div class="arrow next"></div>
-			</div>
-		</div>
-	</div>
-	<div class="clear"></div>
-</section>
-<section id="o" name="about">
-	<div class="suwak">
-		<div class="part active" id="info" name="me">
-			<div class="inside" itemscope itemtype="http://data-vocabulary.org/Person">				
-				<h2 class="headline"><span class="icon">.</span>O mnie<small>Łaaaha! cała strona moja!</small></h2>				
-				<div class="photo right">
-					<img src="images/photo.png" alt="me" itemprop="photo">
-					<div class="tri">																	
-						<span class="t5 l15 tlu o2"></span><span class="t5 l16 tld o1"></span><span class="t5 l17 tlu o7"></span><span class="t5 l18 tld o4"></span><span class="t5 l19 tlu o05"></span><span class="t6 l14 tlu o7"></span><span class="t6 l20 tlu o9"></span><span class="t7 l14 tdd o1"></span><span class="t7 l15 tlu o2"></span><span class="t7 l19 tlu o5"></span><span class="t7 l20 tld o3"></span><span class="t7 l21 tdu o1"></span><span class="t8 l14 tlu o1"></span><span class="t8 l15 tld o3"></span><span class="t8 l16 tlu o7"></span><span class="t8 l18 tlu o3"></span><span class="t8 l19 tld o1"></span><span class="t4 l16 tlu o1"></span><span class="t4 l23 tld o1"></span><span class="t5 l12 tld o05"></span><span class="t5 l13 tlu o2"></span><span class="t5 l20 tld o1"></span><span class="t5 l21 tlu o05"></span><span class="t6 l11 tld o05"></span><span class="t6 l12 tlu o1"></span><span class="t6 l13 tld o3"></span><span class="t6 l22 tlu o1"></span><span class="t7 l11 tlu o1"></span><span class="t7 l12 tld o2"></span><span class="t7 l13 tlu o05"></span><span class="t8 l13 tdd o05"></span><span class="t8 l22 tlu o2"></span><span class="t3 l12 tld o1"></span><span class="t4 l10 tlu o3"></span><span class="t5 l9 tlu o2"></span><span class="t5 l10 tld o1"></span><span class="t5 l11 tdu o1"></span><span class="t6 l6 tdu o05"></span><span class="t6 l9 tld o1"></span><span class="t7 l8 tdd o3"></span><span class="t7 l22 tld o05"></span><span class="t7 l24 tld o2"></span><span class="t8 l7 tld o1"></span><span class="t9 l8 tld o2"></span><span class="t9 l9 tdu o05"></span><span class="t10 l9 tld o1"></span><span class="t3 l5 tlu o1"></span><span class="t5 l2 tld o05"></span><span class="t5 l3 tdu o1"></span><span class="t5 l4 tld o1"></span><span class="t5 l5 tlu o2"></span><span class="t6 l0 tdu o1"></span><span class="t6 l1 tld o05"></span><span class="t6 l2 tlu o2"></span><span class="t6 l4 tdu o1"></span><span class="t7 l1 tlu o2"></span><span class="t7 l2 tdd o05"></span><span class="t7 l3 tdu o2"></span><span class="t7 l5 tlu o1"></span><span class="t8 l1 tld o1"></span><span class="t8 l2 tlu o2"></span><span class="t8 l6 tdu o1"></span><span class="t9 l4 tld o1"></span><span class="t9 l5 tlu o2"></span><span class="t9 l6 tld o05"></span><span class="t10 l5 tld o05"></span><span class="t10 l8 tlu o05"></span>
-					</div>
-				</div>
-				<div class="desc">
-					<p><strong>Jestem <span itemprop="name">Bartek Wojtyca</span>, <span itemprop="org">freelancer</span>, <span itemprop="role">projektant i front-end developer</span> oraz student reklamy i marketingu na Polish Open University w <span itemprop="location">Krakow</span>ie.</strong></p>
-					<p>Od ponad 6ciu lat bawię się z grafiką. Gdy zabawa stała się nieco poważniejsza otrzymałem możliwość nauki kodowania, dzięki czemu teraz staram się "ożywiać" swoje idee by były jeszcze ciekawsze.</p>
-					<p>Jestem geekiem kochającym kino, gadżety, gry i rakiety. Uwielbiam herbatę, która najbardziej mi smakuje w szklance z dwoma łyżeczkami cukru.</p>
-					<p>Aktualnie pracuję w agencji <a href="http://www.sointeractive.pl/" target="_blank">SoInteractive</a>, ale zachęcam po pobrania mojego <a href="cv.pdf" target="_blank">CV</a>.</p>
-				</div>
-				<div class="clear"></div>
-				<div class="more">
-					<div class="tu">Więcej o mnie:</div>
-					<span class="triangle u z1" rel="umiejetnosci">
-						<span class="shape">
-							<span><a href="#"></a></span>						
-						</span>
-						<span class="text"><small class="icon">F</small><strong>Umiejętności</strong></span>
-					</span>
-					<span class="triangle d z1" rel="doswiadczenie">
-						<span class="shape">
-							<span><a href="#"></a></span>						
-						</span>
-						<span class="text"><strong>Doświadczenie</strong><small class="icon">R</small></span>
-					</span>
-					<span class="triangle u z1" rel="wyksztalcenie">
-						<span class="shape">
-							<span><a href="#"></a></span>						
-						</span>
-						<span class="text"><small class="icon">ó</small><strong>Wykształcenie</strong></span>
-					</span>
-				</div>
-			</div>
-			<div class="tArrow"><span class="rArrow" rel="umiejetnosci"><small class="icon">F</small></span></div>
-		</div>
-		<div class="part" id="umiejetnosci" name="skills">
-			<div class="inside">
-				<h2 class="headline"><span class="icon">F</span>Wykres moich umiejętności<small>To czego udało mi się nauczyć</small></h2>
-				<div id="wykres">
-			        <div class="slupki">
-				        <ul>
-				            <li class="ps hidden"><span class="wartosc">97%</span><span class="text">Ps</span></li>
-				            <li class="ai hidden"><span class="wartosc">82%</span><span class="text">Il</span></li>
-				            <li class="fl hidden"><span class="wartosc">41%</span><span class="text">Fl</span></li>
-				            <li class="id hidden"><span class="wartosc">30%</span><span class="text">Id</span></li>
-				            <li class="af hidden"><span class="wartosc">18%</span><span class="text">Ae</span></li>
-				            <li class="cd hidden"><span class="wartosc">37%</span><span class="text">Corel</span></li>                            
-				            <li class="html hidden"><span class="wartosc">92%</span><span class="text">HTML</span></li>                          
-				            <li class="css hidden"><span class="wartosc">95%</span><span class="text">CSS</span></li>
-				            <li class="jq hidden"><span class="wartosc">79%</span><span class="text">jQuery</span></li>
-				            <li class="php hidden"><span class="wartosc">41%</span><span class="text">PHP</span></li>
-				            <li class="seo hidden"><span class="wartosc">68%</span><span class="text">SEO</span></li>
-				            <li class="wp hidden"><span class="wartosc">36%</span><span class="text">WP</span></li>
-				        </ul>
-			        </div>
-			        <div class="linie">
-			        	<ul>
-			        		<li class="l100"><span class="wartosc">100%</span><span class="linia"></span></li>
-			        		<li class="l75"><span class="wartosc">75%</span><span class="linia"></span></li>
-			        		<li class="l50"><span class="wartosc">50%</span><span class="linia"></span></li>
-			        		<li class="l25"><span class="wartosc">25%</span><span class="linia"></span></li>
-			        		<li class="l0"><span class="wartosc">0%</span><span class="linia"></span></li>
-			        	</ul>
-			        </div>
-			    </div>
-			    <div class="info">
-			    	<p>Dodatkowo znajomość pakietu <strong>MS Office</strong>, systemu operacyjnego <strong>MS Windows XP/7</strong>, programów <strong>Aptana Studio</strong>, <strong>Titanium</strong>, system <strong>Subversion</strong>.</p>
-					<p>Bardzo dobrze orientuje się w świecie <strong>nowinek technoligicznych</strong>, <strong>trendów designerskich</strong> oraz <strong>ciekawostek koderskich</strong>.</p>
-			    </div>
-				<div class="clear"></div>
-			</div>
-			<div class="tArrow"><span class="lArrow" rel="info"><small class="icon">.</small></span><span class="rArrow" rel="doswiadczenie"><small class="icon">R</small></span></div>
-		</div>
-		<div class="part" id="doswiadczenie" name="experience">
-			<div class="inside">
-				<h2 class="headline"><span class="icon">R</span>Oś czasu pracy<small>Tak dla animacji... Fajna, co nie?</small></h2>
-				<div class="info">
-					<p>Poniższa oś czasu wskazuje najważniejsze dla mnie etapy pracy i projekty, które w znacznym stopniu wpłynęły na moje umiejętności.</p>
-				</div>
-			    <div id="timeline">
-					<div class="belt freelancer">
-						<div class="line">
-							<strong>Freelancer</strong>
-							<span></span>
-						</div>
-						<ul>
-							<li class="f1 w1"><span class="nazwa"><small><span class="long">Poradnik </span>WorldMu<span class="long"><br>(pierwsza strona WWW)</span></small></span></li>
-							<li class="f2 w1"><span class="nazwa"><small><span class="long">The Lord of The Rings: TCG<br>Liga Polska</span><span class="short">LotR: TCG</span></small></span></li>
-							<li class="f3 w2 toHide"><span class="nazwa"><small><span class="long">Fotografia to pasja...</span><span class="short">FotoPasja</span></small></span></li>
-							<li class="f4 w1 link"><a href="work/duku.html"><span class="nazwa"><small>Duku<span class="long"> - zaciekła muzyka<br>(projekt własny)</span></small></span></a></li>
-							<li class="f5 w2"><span class="nazwa"><small><span class="long">Diamentowa </span>Ochrona Lakieru</small></span></li>
-							<li class="f6 w3 link"><a href="work/aurum.html"><span class="nazwa"><small>Aurum<span class="long"> - Club & Restaurant</span></small></span></a></li>
-							<li class="f7 w1 link"><a href="work/studio_polysku.html"><span class="nazwa"><small><span class="long">Studio Połysku </span>Miracle</small></span></a></li>
-							<li class="f8 w2 link toHide"><a href="work/sanktuarium.html"><span class="nazwa"><small>Sanktuarium<span class="long"> Myślenice</span></small></span></a></li>
-							<li class="f9 w1"><span class="nazwa"><small>KomisDirect.pl</small></span></li>
-							<li class="f10 w2"><span class="nazwa"><small>Polska Giełda</small></span></li>
-							<li class="f11 w1 link"><a href="work/kceto.html"><span class="nazwa"><small>KceTo!</small></span></a></li>
-						</ul>    
-					</div>
-					<div class="belt hotmind">
-						<div class="line">
-							<strong>Hotmind</strong>
-							<span></span>
-						</div>			
-						<ul>
-							<li class="h1 w1 toHide"><span class="nazwa"><small>Alior<span class="long"> Bank</span></small></span></li>
-							<li class="h2 w2 toW1"><span class="nazwa"><small><span class="long">Gourment <br>Restaurants</span><span class="short">GR</span></small></span></li>
-							<li class="h3 w1 toHide"><span class="nazwa"><small>Sport <br>Media</small></span></li>
-							<li class="h4 w1 link"><a href="work/kocierz.html"><span class="nazwa"><small>Kocierz</small></span></a></li>
-							<li class="h5 w2"><span class="nazwa"><small>CarOutlet</small></span></li>
-							<li class="h6 w1 link toW2"><a href="work/alior.html"><span class="nazwa"><small>Alior<span class="long"> Bank <br>Private Banking</span></small></span></a></li>
-							<li class="h7 w2 toHide"><span class="nazwa"><small>Tateossian<span class="long"> London</span></small></span></li>
-							<li class="h8 w3"><span class="nazwa"><small><span class="long">Good Food Concept</span><span class="short">GFC</span></small></span></li>
-							<li class="h9 w1 link"><a href="work/molki.html"><span class="nazwa"><small>Molki</small></span></a></li>
-						</ul>
-					</div>
-					<ul class="time">
-						<li><span class="rok">2006</span><span class="sep"></span></li>
-						<li><span class="rok">2007</span><span class="sep"></span></li>
-						<li><span class="rok">2008</span><span class="sep"></span></li>
-						<li><span class="rok">2009</span><span class="sep"></span></li>
-						<li><span class="rok">2010</span><span class="sep"></span></li>
-						<li><span class="rok">2011</span><span class="sep"></span></li>
-						<li><span class="rok">2012</span><span class="sep"></span></li>
-						<li><span class="rok">2013</span><span class="sep"></span></li>
-					</ul>
-			    </div> 
-			    <div class="clear"></div>
-			</div>
-			<div class="tArrow"><span class="lArrow" rel="umiejetnosci"><small class="icon">F</small></span><span class="rArrow" rel="wyksztalcenie"><small class="icon">ó</small></span></div>
-		</div>
-		<div class="part" id="wyksztalcenie" name="education">
-			<div class="inside">
-				<div class="box wyksztalcenie">
-					<h2 class="headline"><span class="icon">ó</span>Wykształcenie<small>Gdzie ogólną wiedzę zdobywam</small></h2>
-					<div class="desc">
-						<p>
-							<span class="info">wrzesień 2009 - teraz:</span><br>
-							<span class="typ">uczelnia: </span><strong>Polish Open University</strong><br>
-							<span class="typ">kierunek: </span><strong>Reklama i marketing</strong>
-						</p>
-						<p>
-							<span class="info">wrzesień 2006 - czerwiec 2009:</span><br>
-							<span class="typ">szkoła: </span><strong>I LO w Myślenicach</strong><br>
-							<span class="typ">profil: </span><strong>matematyczno-fizyczny</strong>
-						</p>
-					</div>
-				</div>
-				<div class="box geeks">
-					<h2 class="headline"><span class="icon">6</span>Geeks<small>Co mąci mi w głowie</small></h2>	
-					<div class="desc">
-						<img src="images/interest_android.png" class="active">
-						<img src="images/interest_ps3.png">
-						<img src="images/interest_games.png">
-						<img src="images/interest_bike.png">
-						<img src="images/interest_design.png">
-						<img src="images/interest_movies.png">
-						<img src="images/interest_skate.png">
-					</div>
-				</div>
-				<div class="box jezyki">
-					<h2 class="headline"><span class="icon">9</span>Języki<small>Jak potrafię się pozozumieć z innymi</small></h2>
-					<div class="desc">
-						<p>
-							<span class="typ">Polski</span>
-						</p>
-						<ul>
-							<li><span></span></li><li><span></span></li><li><span></span></li><li><span></span></li><li><span></span></li><li><span></span></li><li><span></span></li><li><span></span></li><li><span></span></li><li></li>
-						</ul>
-						<div class="clear"></div>
-						<p>
-							<span class="typ">Angielski</span>
-						</p>
-						<ul>
-							<li><span></span></li><li><span></span></li><li><span></span></li><li><span></span></li><li><span></span></li><li></li><li></li><li></li><li></li><li></li>
-						</ul>
-						<div class="clear"></div>
-						<p>
-							<span class="typ">Niemiecki</span>
-						</p>
-						<ul>
-							<li><span></span></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
-						</ul>
-						<div class="clear"></div>
-					</div>
-				</div>
-				<div class="clear"></div>
-			</div>
-			<div class="tArrow"><span class="lArrow" rel="doswiadczenie"><small class="icon">R</small></span></div>
-		</div>
-		<div class="clear"></div>
-	</div>
-</section>
-<section id="kontakt" name="contact">
-	<div class="part">
-		<div class="inside">
-			<h2 class="headline"><span class="icon">!</span>Pozostańmy w kontakcie<small>Gdzie mnie znajdziesz...</small></h2>
-			<div class="box kontakt">
-				<div class="desc">
-					<p>
-						<span class="info">Adres e-mail:</span><br>
-						<span class="typ icon">%</span><script type="text/javascript" async src="js/ga.js"></script><script type="text/javascript">document.write('<n uers="znvygb:onegrx@jbwglpn.cy">onegrx@jbwglpn.cy</n>'.replace(/[a-z]/gi, function(s) {return String.fromCharCode(s.charCodeAt(0) + (s.toLowerCase() < 'n' ? 13 : -13))}));</script><a href="mailto:bartek@wojtyca.pl">bartek@wojtyca.pl</a>
-					</p>
-					<p>
-						<span class="info">Telefon:</span><br>
-						<span class="typ icon">"</span>+48 510 985 510
-					</p>
-				</div>
-			</div>
-			<div class="box">
-				<div class="desc">
-					<p>
-						<span class="info">Creative media:</span><br>
-						<span class="typ iconImg be"></span><a href="http://be.net/BartekWojtyca">Behance</a><br>
-						<span class="typ iconImg db"></span><a href="http://dribbble.com/BartekW">Dribbble</a><br>
-						<span class="typ iconImg da"></span><a href="http://daedhor.deviantart.com/">DeviantART</a>
-					</p>
-				</div>
-			</div>
-			<div class="box">
-				<div class="desc">
-					<p>
-						<span class="info">Social media:</span><br>
-						<span class="typ iconImg gp"></span><a href="https://plus.google.com/b/111672371827010632402/111672371827010632402/posts">Google+</a><br>
-						<span class="typ iconImg fb"></span><a href="http://www.facebook.com/pages/Bartek-Wojtyca/161296993977018?ref=hl">Facebook</a><br>
-						<span class="typ iconImg tw"></span><a href="https://twitter.com/bartekwojtyca">Twitter</a>
-					</p>
-				</div>	
-			</div>
-			<div class="clear"></div>
-		</div>
-	</div>	
-	<div class="award opl">
-		<a href="http://onepagelove.com/bartek-wojtyca" rel="nofollow">
-			<img src="images/one-page-love-award.png" alt="Bartek Wojtyca featured on One Page Love.">
-		</a>
-	</div>
-	<div class="clear"></div>
-</section>
+<!DOCTYPE html><html lang="en-US" itemscope itemtype="http://schema.org/WebPage"><head><meta charset="utf-8"><script nonce>var DOCS_timing={}; DOCS_timing['sl']=new Date().getTime();</script><script nonce>function _DumpException(e) {throw e;}</script><script nonce>_docs_flag_initialData={"atari-esrt":false,"atari-emtpr":false,"atari-etsswfm":true,"atari-ebidm":false,"atari-ebids":false,"atari-emasgcfrg":false,"atari-estm":false,"atari-edtm":false,"atari-eibrm":false,"atari-enmm":false,"docs-text-elei":false,"docs-text-usc":true,"docs-text-etsrdpn":false,"docs-text-etsrds":false,"docs-text-erdfs":false,"docs-text-encps":false,"docs-text-etis":false,"docs-text-eeves":false,"docs-text-endes":false,"docs-text-efs":false,"docs-text-etocls":false,"docs-text-escpv":true,"docs-text-efts":false,"docs-text-ecfs":false,"docs-text-ecss":false,"docs-text-evs":false,"docs-text-etvs":false,"docs-text-ethples":false,"docs-text-echs":false,"docs-text-eesntps":false,"docs-text-eesss":false,"docs-text-etls":false,"docs-text-eses":false,"docs-etshc":false,"docs-text-tbcb":2.0E7,"docs-text-ftls":true,"docs-efsmsdl":false,"docs-text-ertkcps":true,"docs-euoftm":false,"docs-text-etb":false,"docs-text-esbefr":false,"docs-text-etof":false,"docs-egubst":true,"docs-text-ipi":false,"docs-etbe":false,"docs-text-ehlb":false,"docs-text-epa":true,"docs-text-ecls":true,"docs-eilef":true,"docs-text-enbcr":false,"docs-text-svofc":false,"docs-sup":"","docs-eldi":false,"docs-ecuach":false,"docs-eeii":false,"docs-ipmmp":true,"docs-eiq":false,"docs-ecci":false,"docs-esi":false,"docs-liap":"/logImpressions","ilcm":{"eui":"AHKXmL35W20ZBXqT9MZp2izctvwfIWLf-NUJ3tBuMVWZ8c125NmVREEDBXmGOhRd93423cSmVLag","je":1,"sstu":1664645163945995,"si":"CI6gsr3Gv_oCFVxPqwIdH7kHpA","gsc":null,"ei":[5703839,5704621,5706832,5706836,5707711,5708870,5713207,5714550,5720925,5734954,5735806,5737337,5737441,5737800,5738529,5740814,5741775,5742462,5743124,5747263,5747741,5748029,5752694,5752775,5753329,5754229,5754788,5756315,5759422,5760348,5760827,5761523,5764268,5765551,5766777,5776517,14101306,14101502,14101510,14101534,49341937,49369425,49370160,49370341,49372139,49372443,49375322,49376768,49377640,49378889,49420816,49424389,49424900,49441866,49450016,49472071,49491902,49507738,49510708,49512373,49624080,49644023,49646169,49695456,49703991,49747010],"crc":0,"cvi":[]},"docs-ccdil":false,"docs-eil":true,"docs-eoi":false,"info_params":{},"atari-jefp":"/_/view/jserror","docs-jern":"view","atari-rhpp":"/_/view"}; _docs_flag_cek= null ; if (window['DOCS_timing']) {DOCS_timing['ifdld']=new Date().getTime();}</script><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="referrer" content="strict-origin-when-cross-origin"><link rel="icon" href="BUadalgiAcOH.ico"><meta property="og:title" content="Home"><meta property="og:type" content="website"><meta property="og:url" content="https://sites.google.com/view/123123123ads/home/"><meta property="og:description" content="
+ERORR  404"><meta itemprop="name" content="Home"><meta itemprop="description" content="
+ERORR  404"><meta itemprop="url" content="https://sites.google.com/view/123123123ads/home/"><link href="https://fonts.googleapis.com/css?family=Lato%3A300%2C300italic%2C400%2C400italic%2C700%2C700italic&amp;display=swap" rel="stylesheet" nonce><link href="https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:300,400,500,700|Source+Code+Pro:400,700&amp;display=swap" rel="stylesheet" nonce><link href="https://fonts.googleapis.com/css?family=Architects%20Daughter%3Ai%2Cbi%2C700%2C400&amp;display=swap" rel="stylesheet" nonce><link rel="stylesheet" href="https://www.gstatic.com/_/atari/_/ss/k=atari.vw.LuQ19VM4eCM.L.W.O/d=1/rs=AGEqA5mwysBQDo4VYchNA2IS50O1iG4MUQ" data-id="_cl" nonce><script nonce></script><title>Home</title><style jsname="ptDGoc" nonce>.M63kCb{background-color: rgba(255,255,255,1);}.OUGEr{color: rgba(33,33,33,1);}.duRjpb .OUGEr{color: rgba(34,110,147,1);}.JYVBee .OUGEr{color: rgba(34,110,147,1);}.OmQG5e .OUGEr{color: rgba(33,33,33,1);}.iwQgFb{background-color: rgba(0,0,0,0.150000006);}.ySLm4c{font-family: Lato, sans-serif;}.CbiMKe{background-color: rgba(30,108,147,1);}.qeLZfd .zfr3Q{color: rgba(33,33,33,1);}.qeLZfd .qnVSj{color: rgba(33,33,33,1);}.qeLZfd .Glwbz{color: rgba(33,33,33,1);}.qeLZfd .duRjpb{color: rgba(34,110,147,1);}.qeLZfd .qLrapd{color: rgba(34,110,147,1);}.qeLZfd .JYVBee{color: rgba(34,110,147,1);}.qeLZfd .aHM7ed{color: rgba(34,110,147,1);}.qeLZfd .OmQG5e{color: rgba(33,33,33,1);}.qeLZfd .NHD4Gf{color: rgba(33,33,33,1);}.qeLZfd .aw5Odc{color: rgba(0,101,128,1);}.qeLZfd .dhtgD:hover{color: rgba(0,0,0,1);}.qeLZfd .dhtgD:visited{color: rgba(0,101,128,1);}.qeLZfd .iwQgFb{background-color: rgba(0,0,0,0.150000006);}.qeLZfd .OUGEr{color: rgba(33,33,33,1);}.qeLZfd .duRjpb .OUGEr{color: rgba(34,110,147,1);}.qeLZfd .JYVBee .OUGEr{color: rgba(34,110,147,1);}.qeLZfd .OmQG5e .OUGEr{color: rgba(33,33,33,1);}.qeLZfd:before{background-color: rgba(242,242,242,1); display: block;}.lQAHbd .zfr3Q{color: rgba(255,255,255,1);}.lQAHbd .qnVSj{color: rgba(255,255,255,1);}.lQAHbd .Glwbz{color: rgba(255,255,255,1);}.lQAHbd .duRjpb{color: rgba(255,255,255,1);}.lQAHbd .qLrapd{color: rgba(255,255,255,1);}.lQAHbd .JYVBee{color: rgba(255,255,255,1);}.lQAHbd .aHM7ed{color: rgba(255,255,255,1);}.lQAHbd .OmQG5e{color: rgba(255,255,255,1);}.lQAHbd .NHD4Gf{color: rgba(255,255,255,1);}.lQAHbd .aw5Odc{color: rgba(255,255,255,1);}.lQAHbd .dhtgD:hover{color: rgba(255,255,255,1);}.lQAHbd .dhtgD:visited{color: rgba(255,255,255,1);}.lQAHbd .iwQgFb{background-color: rgba(255,255,255,0.150000006);}.lQAHbd .OUGEr{color: rgba(255,255,255,1);}.lQAHbd .duRjpb .OUGEr{color: rgba(255,255,255,1);}.lQAHbd .JYVBee .OUGEr{color: rgba(255,255,255,1);}.lQAHbd .OmQG5e .OUGEr{color: rgba(255,255,255,1);}.lQAHbd .CbiMKe{background-color: rgba(255,255,255,1);}.lQAHbd:before{background-color: rgba(30,108,147,1); display: block;}.cJgDec .zfr3Q{color: rgba(255,255,255,1);}.cJgDec .zfr3Q .OUGEr{color: rgba(255,255,255,1);}.cJgDec .qnVSj{color: rgba(255,255,255,1);}.cJgDec .Glwbz{color: rgba(255,255,255,1);}.cJgDec .qLrapd{color: rgba(255,255,255,1);}.cJgDec .aHM7ed{color: rgba(255,255,255,1);}.cJgDec .NHD4Gf{color: rgba(255,255,255,1);}.cJgDec .IFuOkc:before{background-color: rgba(33,33,33,1); opacity: 0; display: block;}.O13XJf{height: 340px; padding-bottom: 60px; padding-top: 60px;}.O13XJf .IFuOkc{background-color: rgba(34,110,147,1); background-image: url(images/VXVJgzbnD5FF.png);}.O13XJf .IFuOkc:before{background-color: rgba(33,33,33,1); opacity: 0.4; display: block;}.O13XJf .zfr3Q{color: rgba(255,255,255,1);}.O13XJf .qnVSj{color: rgba(255,255,255,1);}.O13XJf .Glwbz{color: rgba(255,255,255,1);}.O13XJf .duRjpb{color: rgba(255,255,255,1);}.O13XJf .qLrapd{color: rgba(255,255,255,1);}.O13XJf .JYVBee{color: rgba(255,255,255,1);}.O13XJf .aHM7ed{color: rgba(255,255,255,1);}.O13XJf .OmQG5e{color: rgba(255,255,255,1);}.O13XJf .NHD4Gf{color: rgba(255,255,255,1);}.tpmmCb .zfr3Q{color: rgba(33,33,33,1);}.tpmmCb .zfr3Q .OUGEr{color: rgba(33,33,33,1);}.tpmmCb .qnVSj{color: rgba(33,33,33,1);}.tpmmCb .Glwbz{color: rgba(33,33,33,1);}.tpmmCb .qLrapd{color: rgba(33,33,33,1);}.tpmmCb .aHM7ed{color: rgba(33,33,33,1);}.tpmmCb .NHD4Gf{color: rgba(33,33,33,1);}.tpmmCb .IFuOkc:before{background-color: rgba(255,255,255,1); display: block;}.tpmmCb .Wew9ke{fill: rgba(33,33,33,1);}.aw5Odc{color: rgba(0,101,128,1);}.dhtgD:hover{color: rgba(0,122,147,1);}.dhtgD:active{color: rgba(0,122,147,1);}.dhtgD:visited{color: rgba(0,101,128,1);}.Zjiec{color: rgba(255,255,255,1); font-family: Lato, sans-serif; font-size: 19pt; font-weight: 300; letter-spacing: 1px; line-height: 1.3; padding-bottom: 62.5px; padding-left: 48px; padding-right: 36px; padding-top: 11.5px;}.XMyrgf{margin-top: 0px; margin-left: 48px; margin-bottom: 24px; margin-right: 24px;}.TlfmSc{color: rgba(255,255,255,1); font-family: Lato, sans-serif; font-size: 15pt; font-weight: 300; line-height: 1.333;}.Mz8gvb{color: rgba(255,255,255,1);}.zDUgLc{background-color: rgba(33,33,33,1);}.QTKDff.chg4Jd:focus{background-color: rgba(255,255,255,0.1199999973);}.YTv4We{color: rgba(178,178,178,1);}.YTv4We:hover:before{background-color: rgba(255,255,255,0.1199999973); display: block;}.YTv4We.chg4Jd:focus:before{border-color: rgba(255,255,255,0.3600000143); display: block;}.eWDljc{background-color: rgba(33,33,33,1);}.eWDljc .hDrhEe{padding-left: 8px;}.ZXW7w{color: rgba(255,255,255,1); opacity: 0.26;}.PsKE7e{color: rgba(255,255,255,1); font-family: Lato, sans-serif; font-size: 12pt; font-weight: 300;}.lhZOrc{color: rgba(73,170,212,1);}.hDrhEe:hover{color: rgba(73,170,212,1);}.M9vuGd{color: rgba(73,170,212,1); font-weight: 400;}.jgXgSe:hover{color: rgba(73,170,212,1);}.j10yRb:hover{color: rgba(0,188,212,1);}.j10yRb.chg4Jd:focus:before{border-color: rgba(255,255,255,0.3600000143); display: block;}.tCHXDc{color: rgba(255,255,255,1);}.iWs3gf.chg4Jd:focus{background-color: rgba(255,255,255,0.1199999973);}.wgxiMe{background-color: rgba(33,33,33,1);}.fOU46b .TlfmSc{color: rgba(255,255,255,1);}.fOU46b .KJll8d{background-color: rgba(255,255,255,1);}.fOU46b .Mz8gvb{color: rgba(255,255,255,1);}.fOU46b .Mz8gvb.chg4Jd:focus:before{border-color: rgba(255,255,255,1); display: block;}.fOU46b .qV4dIc{color: rgba(255,255,255,0.8700000048);}.fOU46b .jgXgSe:hover{color: rgba(255,255,255,1);}.fOU46b .M9vuGd{color: rgba(255,255,255,1);}.fOU46b .tCHXDc{color: rgba(255,255,255,0.8700000048);}.fOU46b .iWs3gf.chg4Jd:focus{background-color: rgba(255,255,255,0.1199999973);}.fOU46b .G8QRnc .Mz8gvb{color: rgba(0,0,0,0.8000000119);}.fOU46b .G8QRnc .Mz8gvb.chg4Jd:focus:before{border-color: rgba(0,0,0,0.8000000119); display: block;}.fOU46b .G8QRnc .ZXW7w{color: rgba(0,0,0,0.8000000119);}.fOU46b .G8QRnc .TlfmSc{color: rgba(0,0,0,0.8000000119);}.fOU46b .G8QRnc .KJll8d{background-color: rgba(0,0,0,0.8000000119);}.fOU46b .G8QRnc .qV4dIc{color: rgba(0,0,0,0.6399999857);}.fOU46b .G8QRnc .jgXgSe:hover{color: rgba(0,0,0,0.8199999928);}.fOU46b .G8QRnc .M9vuGd{color: rgba(0,0,0,0.8199999928);}.fOU46b .G8QRnc .tCHXDc{color: rgba(0,0,0,0.6399999857);}.fOU46b .G8QRnc .iWs3gf.chg4Jd:focus{background-color: rgba(0,0,0,0.1199999973);}.fOU46b .usN8rf .Mz8gvb{color: rgba(0,0,0,0.8000000119);}.fOU46b .usN8rf .Mz8gvb.chg4Jd:focus:before{border-color: rgba(0,0,0,0.8000000119); display: block;}.fOU46b .usN8rf .ZXW7w{color: rgba(0,0,0,0.8000000119);}.fOU46b .usN8rf .TlfmSc{color: rgba(0,0,0,0.8000000119);}.fOU46b .usN8rf .KJll8d{background-color: rgba(0,0,0,0.8000000119);}.fOU46b .usN8rf .qV4dIc{color: rgba(0,0,0,0.6399999857);}.fOU46b .usN8rf .jgXgSe:hover{color: rgba(0,0,0,0.8199999928);}.fOU46b .usN8rf .M9vuGd{color: rgba(0,0,0,0.8199999928);}.fOU46b .usN8rf .tCHXDc{color: rgba(0,0,0,0.6399999857);}.fOU46b .usN8rf .iWs3gf.chg4Jd:focus{background-color: rgba(0,0,0,0.1199999973);}.fOU46b .aCIEDd .qV4dIc{color: rgba(33,33,33,1);}.fOU46b .aCIEDd .TlfmSc{color: rgba(33,33,33,1);}.fOU46b .aCIEDd .KJll8d{background-color: rgba(33,33,33,1);}.fOU46b .aCIEDd .ZXW7w{color: rgba(33,33,33,1);}.fOU46b .aCIEDd .jgXgSe:hover{color: rgba(33,33,33,1); opacity: 0.82;}.fOU46b .aCIEDd .Mz8gvb{color: rgba(33,33,33,1);}.fOU46b .aCIEDd .tCHXDc{color: rgba(33,33,33,1);}.fOU46b .aCIEDd .iWs3gf.chg4Jd:focus{background-color: rgba(33,33,33,0.1199999973);}.fOU46b .a3ETed .qV4dIc{color: rgba(255,255,255,1);}.fOU46b .a3ETed .TlfmSc{color: rgba(255,255,255,1);}.fOU46b .a3ETed .KJll8d{background-color: rgba(255,255,255,1);}.fOU46b .a3ETed .ZXW7w{color: rgba(255,255,255,1);}.fOU46b .a3ETed .jgXgSe:hover{color: rgba(255,255,255,1); opacity: 0.82;}.fOU46b .a3ETed .Mz8gvb{color: rgba(255,255,255,1);}.fOU46b .a3ETed .tCHXDc{color: rgba(255,255,255,1);}.fOU46b .a3ETed .iWs3gf.chg4Jd:focus{background-color: rgba(255,255,255,0.1199999973);}@media only screen and (min-width: 1280px){.XeSM4.b2Iqye.fOU46b .LBrwzc .tCHXDc{color: rgba(255,255,255,0.8700000048);}}.XeSM4.b2Iqye.fOU46b .LBrwzc .iWs3gf.chg4Jd:focus{background-color: rgba(255,255,255,0.1199999973);}@media only screen and (min-width: 1280px){.KuNac.b2Iqye.fOU46b .tCHXDc{color: rgba(0,0,0,0.6399999857);}}.KuNac.b2Iqye.fOU46b .iWs3gf.chg4Jd:focus{background-color: rgba(0,0,0,0.1199999973);}.fOU46b .zDUgLc{opacity: 0;}.LBrwzc .ZXW7w{color: rgba(0,0,0,1);}.LBrwzc .KJll8d{background-color: rgba(0,0,0,1);}.GBy4H .ZXW7w{color: rgba(255,255,255,1);}.GBy4H .KJll8d{background-color: rgba(255,255,255,1);}.eBSUbc{background-color: rgba(33,33,33,1); color: rgba(0,188,212,0.6999999881);}.BFDQOb:hover{color: rgba(73,170,212,1);}.ImnMyf{background-color: rgba(255,255,255,1); color: rgba(33,33,33,1);}.Vs12Bd{background-color: rgba(242,242,242,1); color: rgba(33,33,33,1);}.S5d9Rd{background-color: rgba(30,108,147,1); color: rgba(255,255,255,1);}.zfr3Q{color: rgba(33,33,33,1); font-family: Lato, sans-serif; font-size: 11pt; font-weight: 400; line-height: 1.6667; margin-top: 12px;}.qnVSj{color: rgba(33,33,33,1);}.Glwbz{color: rgba(33,33,33,1);}.duRjpb{color: rgba(34,110,147,1); font-family: Lato, sans-serif; font-size: 34pt; font-weight: 300; letter-spacing: 0.5px; line-height: 1.2; margin-top: 30px;}.Ap4VC{margin-bottom: -30px;}.qLrapd{color: rgba(34,110,147,1);}.JYVBee{color: rgba(34,110,147,1); font-family: Lato, sans-serif; font-size: 19pt; font-weight: 400; line-height: 1.4; margin-top: 20px;}.CobnVe{margin-bottom: -20px;}.aHM7ed{color: rgba(34,110,147,1);}.OmQG5e{color: rgba(33,33,33,1); font-family: Lato, sans-serif; font-size: 15pt; font-style: normal; font-weight: 400; line-height: 1.25; margin-top: 16px;}.GV3q8e{margin-bottom: -16px;}.NHD4Gf{color: rgba(33,33,33,1);}.LB7kq .duRjpb{font-size: 64pt; letter-spacing: 2px; line-height: 1; margin-top: 40px;}.LB7kq .JYVBee{font-size: 25pt; font-weight: 300; line-height: 1.1; margin-top: 25px;}@media only screen and (max-width: 479px){.LB7kq .duRjpb{font-size: 40pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.LB7kq .duRjpb{font-size: 53pt;}}@media only screen and (max-width: 479px){.LB7kq .JYVBee{font-size: 19pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.LB7kq .JYVBee{font-size: 22pt;}}.O13XJf{height: 340px; padding-bottom: 60px; padding-top: 60px;}@media only screen and (min-width: 480px) and (max-width: 767px){.O13XJf{height: 280px; padding-bottom: 40px; padding-top: 40px;}}@media only screen and (max-width: 479px){.O13XJf{height: 250px; padding-bottom: 30px; padding-top: 30px;}}.SBrW1{height: 520px;}@media only screen and (min-width: 480px) and (max-width: 767px){.SBrW1{height: 520px;}}@media only screen and (max-width: 479px){.SBrW1{height: 400px;}}.Wew9ke{fill: rgba(255,255,255,1);}.gk8rDe{height: 180px; padding-bottom: 32px; padding-top: 60px;}.gk8rDe .zfr3Q{color: rgba(0,0,0,1);}.gk8rDe .duRjpb{color: rgba(34,110,147,1); font-size: 45pt; line-height: 1.1;}.gk8rDe .qLrapd{color: rgba(34,110,147,1);}.gk8rDe .JYVBee{color: rgba(34,110,147,1); font-size: 27pt; line-height: 1.35; margin-top: 15px;}.gk8rDe .aHM7ed{color: rgba(34,110,147,1);}.gk8rDe .OmQG5e{color: rgba(33,33,33,1);}.gk8rDe .NHD4Gf{color: rgba(33,33,33,1);}@media only screen and (max-width: 479px){.gk8rDe .duRjpb{font-size: 30pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.gk8rDe .duRjpb{font-size: 38pt;}}@media only screen and (max-width: 479px){.gk8rDe .JYVBee{font-size: 20pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.gk8rDe .JYVBee{font-size: 24pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.gk8rDe{padding-top: 45px;}}@media only screen and (max-width: 479px){.gk8rDe{padding-bottom: 0px; padding-top: 30px;}}.dhtgD{text-decoration: underline;}.JzO0Vc{background-color: rgba(33,33,33,1); font-family: Lato, sans-serif; width: 250px;}@media only screen and (min-width: 1280px){.JzO0Vc{padding-top: 48.5px;}}.TlfmSc{font-family: Lato, sans-serif; font-size: 15pt; font-weight: 300; line-height: 1.333;}.PsKE7e{font-family: Lato, sans-serif; font-size: 12pt;}.IKA38e{line-height: 1.21;}.hDrhEe{padding-bottom: 11.5px; padding-top: 11.5px;}.zDUgLc{opacity: 1;}.QmpIrf{background-color: rgba(30,108,147,1); border-color: rgba(255,255,255,1); color: rgba(255,255,255,1); font-family: Lato, sans-serif; font-size: 11pt; line-height: normal;}.xkUom{border-color: rgba(30,108,147,1); color: rgba(30,108,147,1); font-family: Lato, sans-serif; font-size: 11pt; line-height: normal;}.xkUom:hover{background-color: rgba(30,108,147,0.1000000015);}.KjwKmc{color: rgba(30,108,147,1); font-family: Lato, sans-serif; font-size: 11pt; line-height: normal; line-height: normal;}.KjwKmc:hover{background-color: rgba(30,108,147,0.1000000015);}.lQAHbd .QmpIrf{background-color: rgba(255,255,255,1); border-color: rgba(34,110,147,1); color: rgba(34,110,147,1); font-family: Lato, sans-serif; font-size: 11pt; line-height: normal;}.lQAHbd .xkUom{border-color: rgba(242,242,242,1); color: rgba(242,242,242,1); font-family: Lato, sans-serif; font-size: 11pt; line-height: normal;}.lQAHbd .xkUom:hover{background-color: rgba(255,255,255,0.1000000015);}.lQAHbd .KjwKmc{color: rgba(242,242,242,1); font-family: Lato, sans-serif; font-size: 11pt; line-height: normal;}.lQAHbd .KjwKmc:hover{background-color: rgba(255,255,255,0.1000000015);}.lQAHbd .Mt0nFe{border-color: rgba(255,255,255,0.200000003);}.cJgDec .QmpIrf{background-color: rgba(255,255,255,1); border-color: rgba(34,110,147,1); color: rgba(34,110,147,1); font-family: Lato, sans-serif; font-size: 11pt; line-height: normal;}.cJgDec .xkUom{border-color: rgba(242,242,242,1); color: rgba(242,242,242,1); font-family: Lato, sans-serif; font-size: 11pt; line-height: normal;}.cJgDec .xkUom:hover{background-color: rgba(255,255,255,0.1000000015);}.cJgDec .KjwKmc{color: rgba(242,242,242,1); font-family: Lato, sans-serif; font-size: 11pt; line-height: normal;}.cJgDec .KjwKmc:hover{background-color: rgba(255,255,255,0.1000000015);}.tpmmCb .QmpIrf{background-color: rgba(255,255,255,1); border-color: rgba(34,110,147,1); color: rgba(34,110,147,1); font-family: Lato, sans-serif; font-size: 11pt; line-height: normal;}.tpmmCb .xkUom{border-color: rgba(30,108,147,1); color: rgba(30,108,147,1); font-family: Lato, sans-serif; font-size: 11pt; line-height: normal;}.tpmmCb .xkUom:hover{background-color: rgba(30,108,147,0.1000000015);}.tpmmCb .KjwKmc{color: rgba(30,108,147,1); font-family: Lato, sans-serif; font-size: 11pt; line-height: normal;}.tpmmCb .KjwKmc:hover{background-color: rgba(30,108,147,0.1000000015);}.gk8rDe .QmpIrf{background-color: rgba(30,108,147,1); border-color: rgba(255,255,255,1); color: rgba(255,255,255,1); font-family: Lato, sans-serif; font-size: 11pt; line-height: normal;}.gk8rDe .xkUom{border-color: rgba(30,108,147,1); color: rgba(30,108,147,1); font-family: Lato, sans-serif; font-size: 11pt; line-height: normal;}.gk8rDe .xkUom:hover{background-color: rgba(30,108,147,0.1000000015);}.gk8rDe .KjwKmc{color: rgba(30,108,147,1); font-family: Lato, sans-serif; font-size: 11pt; line-height: normal;}.gk8rDe .KjwKmc:hover{background-color: rgba(30,108,147,0.1000000015);}.O13XJf .QmpIrf{background-color: rgba(255,255,255,1); border-color: rgba(34,110,147,1); color: rgba(34,110,147,1); font-family: Lato, sans-serif; font-size: 11pt; line-height: normal;}.O13XJf .xkUom{border-color: rgba(242,242,242,1); color: rgba(242,242,242,1); font-family: Lato, sans-serif; font-size: 11pt; line-height: normal;}.O13XJf .xkUom:hover{background-color: rgba(255,255,255,0.1000000015);}.O13XJf .KjwKmc{color: rgba(242,242,242,1); font-family: Lato, sans-serif; font-size: 11pt; line-height: normal;}.O13XJf .KjwKmc:hover{background-color: rgba(255,255,255,0.1000000015);}.Y4CpGd{font-family: Lato, sans-serif; font-size: 11pt;}.CMArNe{background-color: rgba(242,242,242,1);}.LBrwzc .TlfmSc{color: rgba(0,0,0,0.8000000119);}.LBrwzc .YTv4We{color: rgba(0,0,0,0.6399999857);}.LBrwzc .YTv4We.chg4Jd:focus:before{border-color: rgba(0,0,0,0.6399999857); display: block;}.LBrwzc .Mz8gvb{color: rgba(0,0,0,0.6399999857);}.LBrwzc .tCHXDc{color: rgba(0,0,0,0.6399999857);}.LBrwzc .iWs3gf.chg4Jd:focus{background-color: rgba(0,0,0,0.1199999973);}.LBrwzc .wgxiMe{background-color: rgba(255,255,255,1);}.LBrwzc .qV4dIc{color: rgba(0,0,0,0.6399999857);}.LBrwzc .M9vuGd{color: rgba(0,0,0,0.8000000119); font-weight: bold;}.LBrwzc .Zjiec{color: rgba(0,0,0,0.8000000119);}.LBrwzc .IKA38e{color: rgba(0,0,0,0.6399999857);}.LBrwzc .lhZOrc.IKA38e{color: rgba(0,0,0,0.8000000119); font-weight: bold;}.LBrwzc .j10yRb:hover{color: rgba(0,0,0,0.8000000119);}.LBrwzc .eBSUbc{color: rgba(0,0,0,0.8000000119);}.LBrwzc .hDrhEe:hover{color: rgba(0,0,0,0.8000000119);}.LBrwzc .jgXgSe:hover{color: rgba(0,0,0,0.8000000119);}.LBrwzc .M9vuGd:hover{color: rgba(0,0,0,0.8000000119);}.LBrwzc .zDUgLc{border-bottom-color: rgba(204,204,204,1); border-bottom-width: 1px; border-bottom-style: solid;}.fOU46b .LBrwzc .M9vuGd{color: rgba(0,0,0,0.8000000119);}.fOU46b .LBrwzc .jgXgSe:hover{color: rgba(0,0,0,0.8000000119);}.fOU46b .LBrwzc .zDUgLc{opacity: 1; border-bottom-style: none;}.fOU46b .LBrwzc .tCHXDc{color: rgba(0,0,0,0.6399999857);}.fOU46b .LBrwzc .iWs3gf.chg4Jd:focus{background-color: rgba(0,0,0,0.1199999973);}.fOU46b .GBy4H .M9vuGd{color: rgba(255,255,255,1);}.fOU46b .GBy4H .jgXgSe:hover{color: rgba(255,255,255,1);}.fOU46b .GBy4H .zDUgLc{opacity: 1;}.fOU46b .GBy4H .tCHXDc{color: rgba(255,255,255,0.8700000048);}.fOU46b .GBy4H .iWs3gf.chg4Jd:focus{background-color: rgba(255,255,255,0.1199999973);}.XeSM4.G9Qloe.fOU46b .LBrwzc .tCHXDc{color: rgba(0,0,0,0.6399999857);}.XeSM4.G9Qloe.fOU46b .LBrwzc .iWs3gf.chg4Jd:focus{background-color: rgba(0,0,0,0.1199999973);}.GBy4H .lhZOrc.IKA38e{color: rgba(255,255,255,1);}.GBy4H .eBSUbc{color: rgba(255,255,255,0.8700000048);}.GBy4H .hDrhEe:hover{color: rgba(255,255,255,1);}.GBy4H .j10yRb:hover{color: rgba(255,255,255,1);}.GBy4H .YTv4We{color: rgba(255,255,255,1);}.GBy4H .YTv4We.chg4Jd:focus:before{border-color: rgba(255,255,255,1); display: block;}.GBy4H .tCHXDc{color: rgba(255,255,255,0.8700000048);}.GBy4H .iWs3gf.chg4Jd:focus{background-color: rgba(255,255,255,0.1199999973);}.GBy4H .jgXgSe:hover{color: rgba(255,255,255,1);}.GBy4H .jgXgSe:hover{color: rgba(255,255,255,1);}.GBy4H .M9vuGd{color: rgba(255,255,255,1);}.GBy4H .M9vuGd:hover{color: rgba(255,255,255,1);}.QcmuFb{padding-left: 20px;}.vDPrib{padding-left: 40px;}.TBDXjd{padding-left: 60px;}.bYeK8e{padding-left: 80px;}.CuqSDe{padding-left: 100px;}.Havqpe{padding-left: 120px;}.JvDrRe{padding-left: 140px;}.o5lrIf{padding-left: 160px;}.yOJW7c{padding-left: 180px;}.rB8cye{padding-left: 200px;}.RuayVd{padding-right: 20px;}.YzcKX{padding-right: 40px;}.reTV0b{padding-right: 60px;}.vSYeUc{padding-right: 80px;}.PxtZIe{padding-right: 100px;}.ahQMed{padding-right: 120px;}.rzhcXb{padding-right: 140px;}.PBhj0b{padding-right: 160px;}.TlN46c{padding-right: 180px;}.GEdNnc{padding-right: 200px;}.TMjjoe{font-family: Lato, sans-serif; font-size: 9pt; line-height: 1.2; margin-top: 0px;}@media only screen and (min-width: 1280px){.yxgWrb{margin-left: 250px;}}@media only screen and (max-width: 479px){.Zjiec{font-size: 15pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.Zjiec{font-size: 17pt;}}@media only screen and (max-width: 479px){.TlfmSc{font-size: 13pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.TlfmSc{font-size: 14pt;}}@media only screen and (max-width: 479px){.PsKE7e{font-size: 12pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.PsKE7e{font-size: 12pt;}}@media only screen and (max-width: 479px){.duRjpb{font-size: 24pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.duRjpb{font-size: 29pt;}}@media only screen and (max-width: 479px){.JYVBee{font-size: 15pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.JYVBee{font-size: 17pt;}}@media only screen and (max-width: 479px){.OmQG5e{font-size: 13pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.OmQG5e{font-size: 14pt;}}@media only screen and (max-width: 479px){.TlfmSc{font-size: 13pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.TlfmSc{font-size: 14pt;}}@media only screen and (max-width: 479px){.PsKE7e{font-size: 12pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.PsKE7e{font-size: 12pt;}}@media only screen and (max-width: 479px){.TMjjoe{font-size: 9pt;}}@media only screen and (min-width: 480px) and (max-width: 767px){.TMjjoe{font-size: 9pt;}}</style><script nonce>_at_config = [null,"AIzaSyChg3MFqzdi1P5J-YvEyakkSA1yU7HRcDI","897606708560-a63d8ia0t9dhtpdt4i3djab2m42see7o.apps.googleusercontent.com",null,null,null,null,null,null,null,null,null,null,null,"SITES_%s",null,null,null,null,null,null,null,null,null,["AHKXmL35W20ZBXqT9MZp2izctvwfIWLf-NUJ3tBuMVWZ8c125NmVREEDBXmGOhRd93423cSmVLag",1,"CI6gsr3Gv_oCFVxPqwIdH7kHpA",1664645163945995,[5703839,5704621,5706832,5706836,5707711,5708870,5713207,5714550,5720925,5734954,5735806,5737337,5737441,5737800,5738529,5740814,5741775,5742462,5743124,5747263,5747741,5748029,5752694,5752775,5753329,5754229,5754788,5756315,5759422,5760348,5760827,5761523,5764268,5765551,5766777,5776517,14101306,14101502,14101510,14101534,49341937,49369425,49370160,49370341,49372139,49372443,49375322,49376768,49377640,49378889,49420816,49424389,49424900,49441866,49450016,49472071,49491902,49507738,49510708,49512373,49624080,49644023,49646169,49695456,49703991,49747010]],null,null,null,null,0,null,null,null,null,null,null,null,null,null,"https://drive.google.com",null,null,null,null,null,null,null,null,null,0,1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"v2internal","https://docs.google.com",null,null,null,null,null,null,"https://sites.google.com/new/",null,null,null,null,null,0,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,1,"",null,null,null,null,null,null,null,null,null,null,null,null,6,null,null,"https://accounts.google.com/o/oauth2/auth","https://accounts.google.com/o/oauth2/postmessageRelay",null,null,null,null,78,"https://sites.google.com/new/?usp\u003dviewer_footer",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"https://www.gstatic.com/atari/embeds/7925c5f8e01bacb9b4b0a3783ae0b867/intermediate-frame-minified.html",0,null,"v2beta",null,null,null,null,null,null,4,"https://accounts.google.com/o/oauth2/iframe",null,null,null,null,null,null,"https://738226198-atari-embeds.googleusercontent.com/embeds/16cb204cf3a9d4d223a0a3fd8b0eec5d/inner-frame-minified.html",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,0,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"https://sites.google.com/view/123123123ads/home/",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,0,null,null,null,null,null,null,0,null,"",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,0,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,1,null,null,[1664645163955,"atari_2022.38-Tue-0500_RC01","475841240",null,1,1,""],null,null,null,null,0,null,null,0,null,null,null,null,null,null,null,null,20,500,"https://domains.google.com",null,0,null,null,null,null,null,null,null,null,null,null,null,0,0,null,null,0,null,1,null,null,null,1,0,0,0,0,0,0,null,0,0,0,null,0,"https://www.google.com/calendar/embed",0,0,0]; window.globals = {"enableAnalytics":true,"webPropertyId":"","showDebug":false,"hashedSiteId":"02a783929755e1bc0713a74b5ef88756a7ed18643e2b887d5a01ae7b56f9b65e","normalizedPath":"view/123123123ads/home","pageTitle":"Home"}; function gapiLoaded() {if (globals.gapiLoaded == undefined) {globals.gapiLoaded = true;} else {globals.gapiLoaded();}}window.messages = []; window.addEventListener && window.addEventListener('message', function(e) {if (window.messages && e.data && e.data.magic == 'SHIC') {window.messages.push(e);}});</script><script src="https://apis.google.com/js/client.js?onload=gapiLoaded" nonce></script><script nonce>(function(){/*
 
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+/*
 
-<div class="QOverlay">
-	<div id="loader">
-	    <div class="circle">
-	        <div class="display"></div>
-	        <div class="circleOverflow">
-	            <div class="rotate right">
-	                <div class="bg right"><span></span></div>
-	            </div>
-	        </div>
-	        <div class="circleOverflow">
-	            <div class="rotate left">
-	                <div class="bg left"><span></span></div>
-	            </div>
-	        </div>
-	    </div>
-	    <div class="d"></div>
-	    <div class="c"></div>
-	</div>
-</div>
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-5383611-2']);
-  _gaq.push(['_setDomainName', 'bartek.wojtyca.pl']);
-  _gaq.push(['_setAllowLinker', true]);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
-<script type="text/javascript" src="js/queryLoader.js"></script>
-<script type="text/javascript">QueryLoader.init();</script>
+ Copyright 2011 Google LLC.
+ SPDX-License-Identifier: Apache-2.0
+*/
+/*
 
-</body></html>
+ Copyright 2013 Google LLC.
+ SPDX-License-Identifier: Apache-2.0
+*/
+/*
+
+ Copyright 2020 Google LLC.
+ SPDX-License-Identifier: Apache-2.0
+*/
+var a=(this||self)._jsa||{};a._cfc=void 0;a._aeh=void 0;/*
+
+ Copyright 2005 Google LLC.
+ SPDX-License-Identifier: Apache-2.0
+*/
+}).call(this);
+</script><script nonce>const imageUrl =  null ;
+      function bgImgLoaded() {
+        if (!globals.headerBgImgLoaded) {
+          globals.headerBgImgLoaded = new Date().getTime();
+        } else {
+          globals.headerBgImgLoaded();
+        }
+      }
+      if (imageUrl) {
+        const img = new Image();
+        img.src = imageUrl;
+        img.onload = bgImgLoaded;
+        globals.headerBgImgExists = true;
+      } else {
+        globals.headerBgImgExists = false;
+      }
+      </script></head><body dir="ltr" itemscope itemtype="http://schema.org/WebPage" id="yDmH0d" css="yDmH0d"><div jscontroller="pc62j" jsmodel="iTeaXe" jsaction="rcuQ6b:WYd;GvneHb:og1FDd;vbaUQc:uAM5ec;"><div jscontroller="X4BaPc" jsaction="rcuQ6b:WYd;o6xM5b:Pg9eo;HuL2Hd:mHeCvf;VMhF5:FFYy5e;sk3Qmb:HI1Mdd;JIbuQc:rSzFEd(z2EeY),aSaF6e(ilzYPe);"><div jscontroller="o1L5Wb" data-sitename="123123123ads" data-universe="1" jsmodel="fNFZH" jsaction="Pe9H6d:cZFEp;WMZaJ:VsGN3;hJluRd:UADL7b;zuqEgd:HI9w0;tr6QDd:Y8aXB;MxH79b:xDkBfb;JIbuQc:SPXMTb(uxAMZ);" jsname="G0jgYd"><div jsname="gYwusb" class="p9b27"></div><div jscontroller="RrXLpc" jsname="XeeWQc" role="banner" jsaction="keydown:uiKYid(OH0EC);rcuQ6b:WYd;zuqEgd:ufqpf;JIbuQc:XfTnxb(lfEfFf),AlTiYc(GeGHKb),AlTiYc(m1xNUe),zZlNMe(pZn8Oc);YqO5N:ELcyfe;"><div jsname="bF1uUb" class="BuY5Fd" jsaction="click:xVuwSc;"></div><div jsname="MVsrn" class="TbNlJb "><div role="button" class="U26fgb mUbCce fKz7Od h3nfre M9Bg4d" jscontroller="VXdfxd" jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;" jsshadow jsname="GeGHKb" aria-label="Back to site" aria-disabled="false" tabindex="0" data-tooltip="Back to site" data-tooltip-vertical-offset="-12" data-tooltip-horizontal-offset="0"><div class="VTBa7b MbhUzd" jsname="ksKsZd"></div><span jsslot class="xjKiLb"><span class="Ce1Y1c" style="top: -12px"><svg class="V4YR2c" viewBox="0 0 24 24" focusable="false"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg></span></span></div><div class="E2UJ5" jsname="M6JdT"><div class="rFrNMe b7AJhc zKHdkd" jscontroller="pxq3x" jsaction="clickonly:KjsqPd; focus:Jt1EX; blur:fpfTEe; input:Lg5SV" jsshadow jsname="OH0EC" aria-expanded="true"><div class="aCsJod oJeWuf"><div class="aXBtI I0VJ4d Wic03c"><span jsslot class="A37UZe qgcB3c iHd5yb"><div role="button" class="U26fgb mUbCce fKz7Od i3PoXe M9Bg4d" jscontroller="VXdfxd" jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;" jsshadow jsname="lfEfFf" aria-label="Search" aria-disabled="false" tabindex="0" data-tooltip="Search" data-tooltip-vertical-offset="-12" data-tooltip-horizontal-offset="0"><div class="VTBa7b MbhUzd" jsname="ksKsZd"></div><span jsslot class="xjKiLb"><span class="Ce1Y1c" style="top: -12px"><svg class="vu8Pwe" viewBox="0 0 24 24" focusable="false"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></span></div><div class="EmVfjc SKShhf" data-loadingmessage="Loading…" jscontroller="qAKInc" jsaction="animationend:kWijWc;dyRcpb:dyRcpb" jsname="aZ2wEe"><div class="Cg7hO" aria-live="assertive" jsname="vyyg5"></div><div jsname="Hxlbvc" class="xu46lf"><div class="ir3uv uWlRce co39ub"><div class="xq3j6 ERcjC"><div class="X6jHbb GOJTSe"></div></div><div class="HBnAAc"><div class="X6jHbb GOJTSe"></div></div><div class="xq3j6 dj3yTd"><div class="X6jHbb GOJTSe"></div></div></div><div class="ir3uv GFoASc Cn087"><div class="xq3j6 ERcjC"><div class="X6jHbb GOJTSe"></div></div><div class="HBnAAc"><div class="X6jHbb GOJTSe"></div></div><div class="xq3j6 dj3yTd"><div class="X6jHbb GOJTSe"></div></div></div><div class="ir3uv WpeOqd hfsr6b"><div class="xq3j6 ERcjC"><div class="X6jHbb GOJTSe"></div></div><div class="HBnAAc"><div class="X6jHbb GOJTSe"></div></div><div class="xq3j6 dj3yTd"><div class="X6jHbb GOJTSe"></div></div></div><div class="ir3uv rHV3jf EjXFBf"><div class="xq3j6 ERcjC"><div class="X6jHbb GOJTSe"></div></div><div class="HBnAAc"><div class="X6jHbb GOJTSe"></div></div><div class="xq3j6 dj3yTd"><div class="X6jHbb GOJTSe"></div></div></div></div></div><div role="button" class="U26fgb mUbCce fKz7Od JyJRXe M9Bg4d" jscontroller="VXdfxd" jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;" jsshadow jsname="m1xNUe" aria-label="Back to site" aria-disabled="false" tabindex="0" data-tooltip="Back to site" data-tooltip-vertical-offset="-12" data-tooltip-horizontal-offset="0"><div class="VTBa7b MbhUzd" jsname="ksKsZd"></div><span jsslot class="xjKiLb"><span class="Ce1Y1c" style="top: -12px"><svg class="V4YR2c" viewBox="0 0 24 24" focusable="false"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg></span></span></div></span><div class="Xb9hP"><input type="search" class="whsOnd zHQkBf" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Search this site" value autofocus role="combobox" data-initial-value><div jsname="LwH6nd" class="ndJi5d snByac" aria-hidden="true">Search this site</div></div><span jsslot class="A37UZe sxyYjd MQL3Ob"><div role="button" class="U26fgb mUbCce fKz7Od Kk06A M9Bg4d" jscontroller="VXdfxd" jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;" jsshadow jsname="pZn8Oc" aria-label="Clear search" aria-disabled="false" tabindex="0" data-tooltip="Clear search" data-tooltip-vertical-offset="-12" data-tooltip-horizontal-offset="0"><div class="VTBa7b MbhUzd" jsname="ksKsZd"></div><span jsslot class="xjKiLb"><span class="Ce1Y1c" style="top: -12px"><svg class="fAUEUd" viewBox="0 0 24 24" focusable="false"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></span></div></span><div class="i9lrp mIZh1c"></div><div jsname="XmnwAc" class="OabDMe cXrdqd"></div></div></div><div class="LXRPh"><div jsname="ty6ygf" class="ovnfwe Is7Fhb"></div></div></div></div></div></div></div><div jsname="tiN4bf"><style nonce>.rrJNTc{opacity: 0;}.bKy5e{pointer-events: none; position: absolute; top: 0;}</style><div class="bKy5e"><div class="rrJNTc" tabindex="-1"><div class="VfPpkd-dgl2Hf-ppHlrf-sM5MNb" data-is-touch-wrapper="true"><button class="VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-dgl2Hf LjDxcd XhPA0b LQeN7 WsSUlf jz7fPb" jscontroller="soHxf" jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc; touchcancel:JMtRjd; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;mlnRJb:fLiPzd;JZCswc:fLiPzd;" data-idom-class="LjDxcd XhPA0b LQeN7 WsSUlf jz7fPb" jsname="z2EeY" tabindex="0"><div class="VfPpkd-Jh9lGc"></div><div class="VfPpkd-J1Ukfc-LhBDec"></div><div class="VfPpkd-RLmnJb"></div><span jsname="V67aGc" class="VfPpkd-vQzf8d">Skip to main content</span></button></div><div class="VfPpkd-dgl2Hf-ppHlrf-sM5MNb" data-is-touch-wrapper="true"><button class="VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-dgl2Hf LjDxcd XhPA0b LQeN7 WsSUlf br90J" jscontroller="soHxf" jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc; touchcancel:JMtRjd; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;mlnRJb:fLiPzd;JZCswc:fLiPzd;" data-idom-class="LjDxcd XhPA0b LQeN7 WsSUlf br90J" jsname="ilzYPe" tabindex="0"><div class="VfPpkd-Jh9lGc"></div><div class="VfPpkd-J1Ukfc-LhBDec"></div><div class="VfPpkd-RLmnJb"></div><span jsname="V67aGc" class="VfPpkd-vQzf8d">Skip to navigation</span></button></div></div></div><div class="M63kCb N63NQ"></div><div class="QZ3zWd"><div class="fktJzd AKpWA fOU46b XeSM4 XxIgdb" jsname="UzWXSb" data-uses-custom-theme="false" data-legacy-theme-name="QualityBasics" data-legacy-theme-font-kit="Light" data-legacy-theme-color-kit="Blue" jscontroller="Md9ENb" jsaction="gsiSmd:Ffcznf;yj5fUd:cpPetb;HNXL3:q0Vyke;e2SXKd:IPDu5e;BdXpgd:nhk7K;rcuQ6b:WYd;"><header id="atIdViewHeader"></header><div role="main" tabindex="-1" class="UtePc RCETm" dir="ltr"><section id="h.2773e282990d1990_8" class="yaqOZd" style><div class="IFuOkc"></div><div class="mYVXT"><div class="LS81yb VICjCf j5pSsc db35Fc" tabindex="-1"><div class="hJDwNd-AhqUyc-uQSCkd Ft7HRd-AhqUyc-uQSCkd purZT-AhqUyc-II5mzb ZcASvf-AhqUyc-II5mzb pSzOP-AhqUyc-qWD73c Ktthjf-AhqUyc-qWD73c JNdkSc SQVYQc"><div class="JNdkSc-SmKAyb LkDMRd"><div class jscontroller="sGwD4d" jsaction="zXBUYb:zTPCnb;zQF9Uc:Qxe3nd;" jsname="F57UId"><div class="oKdM2c ZZyype Kzv0Me"><div id="h.2773e282990d1990_5" class="hJDwNd-AhqUyc-uQSCkd Ft7HRd-AhqUyc-uQSCkd jXK9ad D2fZ2 zu5uec OjCsFc dmUFtb wHaque g5GTcb GNzUNc"><div class="jXK9ad-SmKAyb"><div class="tyJCtd mGzaTb Depvyb baZpAe"><p dir="ltr" class="CDt4Ke zfr3Q" style="text-align: center;"><span style="font-family: &#x27;Architects Daughter&#x27;, &#x27;Arial&#x27;; font-weight: normal;">ERORR  404</span></p></div></div></div></div></div></div></div></div></div></section></div><div class="Xpil1b xgQ6eb"></div><div jscontroller="j1RDQb" jsaction="rcuQ6b:rcuQ6b;MxH79b:JdcaS;FaOgy:XuHpsb;" class="dZA9kd ynRLnc" data-last-updated-at-time="1664645143852"><div role="button" class="U26fgb JRtysb WzwrXb I12f0b K2mXPb zXBiaf ynRLnc" jscontroller="iSvg6e" jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;;keydown:I481le;" jsshadow jsname="Bg3gkf" aria-label="Site actions" aria-disabled="false" tabindex="0" aria-haspopup="true" aria-expanded="false" data-menu-corner="bottom-start" data-anchor-corner="top-start"><div class="NWlf3e MbhUzd" jsname="ksKsZd"></div><span jsslot class="MhXXcc oJeWuf"><span class="Lw7GHd snByac"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class=" NMm5M"><path d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z"/></svg></span></span><div jsname="xl07Ob" style="display:none" aria-hidden="true"><div class="JPdR6b hVNH5c" jscontroller="uY3Nvd" jsaction="IpSVtb:TvD9Pc;fEN2Ze:xzS4ub;frq95c:LNeFm;cFpp9e:J9oOtd; click:H8nU8b; mouseup:H8nU8b; keydown:I481le; keypress:Kr2w4b; blur:O22p3e; focus:H8nU8b" role="menu" tabindex="0" style="position:fixed"><div class="XvhY1d" jsaction="mousedown:p8EH2c; touchstart:p8EH2c;"><div class="JAPqpe K0NPx"><span jsslot class="z80M1 FeRvI" jsaction="click:o6ZaF(preventDefault=true); mousedown:lAhnzb; mouseup:Osgxgf; mouseenter:SKyDAe; mouseleave:xq3APb;touchstart:jJiBRc; touchmove:kZeBdd; touchend:VfAz8(preventMouseEvents=true)" jsname="j7LFlb" data-disabled-tooltip="Report abuse is not available in preview mode" aria-label="Report abuse" role="menuitem" tabindex="-1"><div class="aBBjbd MbhUzd" jsname="ksKsZd"></div><div class="uyYuVb oJeWuf" jscontroller="HYv29e" jsaction="JIbuQc:dQ6O0c;" jsname="xx9PJb" data-abuse-proto="%.@.null,null," https: sites.google.com view 123123123ads home ",null,null,[],[]]"><div class="jO7h3c">Report abuse</div></div></span><span jsslot class="z80M1 FeRvI" jsaction="click:o6ZaF(preventDefault=true); mousedown:lAhnzb; mouseup:Osgxgf; mouseenter:SKyDAe; mouseleave:xq3APb;touchstart:jJiBRc; touchmove:kZeBdd; touchend:VfAz8(preventMouseEvents=true)" jsname="j7LFlb" aria-label="Page details" role="menuitem" tabindex="-1"><div class="aBBjbd MbhUzd" jsname="ksKsZd"></div><div class="uyYuVb oJeWuf" jsaction="JIbuQc:hriXLd;" jsname="Rg8K2c"><div class="jO7h3c">Page details</div></div></span></div></div></div></div></div></div><div jscontroller="j1RDQb" jsaction="focusin:gBxDVb(srlkmf); focusout:zvXhGb(srlkmf); click:ro2KTd(psdQ5e),Toy3n(V2zOu);JIbuQc:DSypkd(Bg3gkf);MxH79b:JdcaS;rcuQ6b:rcuQ6b;" class="LqzjUe ynRLnc" data-last-updated-at-time="1664645143852"><div jsname="psdQ5e" class="Q0cSn"></div><div jsname="bN97Pc" class="hBW7Hb"><div role="button" class="U26fgb mUbCce fKz7Od kpPxtd QMuaBc M9Bg4d" jscontroller="VXdfxd" jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;" jsshadow jsname="Bg3gkf" aria-label="Site actions" aria-disabled="false" tabindex="-1" aria-hidden="true"><div class="VTBa7b MbhUzd" jsname="ksKsZd"></div><span jsslot class="xjKiLb"><span class="Ce1Y1c" style="top: -12px"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class=" NMm5M"><path d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z"/></svg></span></span></div><div jsname="srlkmf" class="hUphyc"><div class="YkaBSd"><div class="iBkmkf"><span>Page updated</span> <span jsname="CFIm1b" class="dji00c" jsaction="AHmuwe:eGiyHb; mouseover:eGiyHb;" tabindex="0" role="contentinfo"></span></div></div><div class="YkaBSd"><div role="button" class="U26fgb kpPxtd J7BuEb" jsshadow jsname="V2zOu" aria-disabled="false" tabindex="0">Google Sites</div></div><div class="YkaBSd" jscontroller="HYv29e" jsaction="click:dQ6O0c;" data-abuse-proto="%.@.null,null," https: sites.google.com view 123123123ads home ",null,null,[],[]]"><div role="button" class="U26fgb kpPxtd J7BuEb" jsshadow aria-label="Report abuse" aria-disabled="false" tabindex="0">Report abuse</div></div></div></div></div></div></div></div><div jsmodel="QxOCld"><div class="lhbLEe LSElHe dnjcK" jscontroller="zPx2U" jsaction="rcuQ6b:WYd;FaOgy:nkegzf;vD0JD:Mq3Rnf;MxH79b:Mq3Rnf" data-cookie-path="/view/123123123ads"><div class="QjDm3">This site uses cookies from Google to deliver its services and to analyze traffic. Information about your use of this site is shared with Google. By using this site, you agree to its use of cookies.</div><div class="hsMuBe"><a class="vzKQHb" target="_blank" href="https://www.google.com/policies/technologies/cookies/"><span>Learn more</span></a><div class="vzKQHb K2OSr" role="button" tabindex="0" jsaction="click:IYtByb;"><span>Got it</span></div></div></div></div><script nonce>DOCS_timing['cov']=new Date().getTime();</script><script src="https://www.gstatic.com/_/atari/_/js/k=atari.vw.en_US.kuBpnO9uMtk.O/d=1/rs=AGEqA5lI5xwy_JfeHLoOZBIvmdFH3qWLmQ/m=view" id="base-js" nonce></script></div></div><div jscontroller="YV8yqd" jsaction="rcuQ6b:npT2md"><div id="docs-aria-speakable" aria-live="assertive" aria-relevant="additions" aria-atomic="true" aria-hidden="false" role="region" class="IWfHH"></div></div></body></html>
